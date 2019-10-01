@@ -1,0 +1,22 @@
+.DatesItem {
+  margin-right: 20px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  color: var(--black25);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  text-transform: uppercase;
+  transition: color 0.1s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: var(--black85);
+  }
+}
+
+.ActiveDate {
+  color: var(--black85);
+  font-size: var(--fz15);
+  line-height: var(--lh19);
+  border-color: var(--spaceBlue);
+}

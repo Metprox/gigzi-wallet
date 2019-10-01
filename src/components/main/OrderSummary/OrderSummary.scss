@@ -1,0 +1,38 @@
+.OrderSummary {
+  max-width: 380px;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #ffffff;
+  h2 {
+    color: var(--black);
+    font-size: var(--fz18);
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: var(--lh28);
+    text-transform: uppercase;
+  }
+}
+
+.btnWrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 1304px) {
+  .OrderSummary {
+    max-width: 390px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .OrderSummary {
+    max-width: 100%;
+  }
+
+  .btnWrap {
+    max-width: 428px;
+  }
+}
+

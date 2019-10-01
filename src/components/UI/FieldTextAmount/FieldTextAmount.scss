@@ -1,0 +1,71 @@
+.FieldTextAmount {
+  width: 100%;
+  max-width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  font-size: var(--fz13);
+  cursor: pointer;
+
+  input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 48px;
+    width: 100%;
+    padding: 0 0 0 15px;
+    background-color: var(--lightBlueGray45);
+
+    &::placeholder {
+      color: var(--black35);
+      font-weight: 500;
+      line-height: var(--lh16);
+    }
+  }
+}
+
+.label {
+  margin-bottom: 8px;
+  color: var(--black65);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+
+.block {
+  position: absolute;
+  width: 79px;
+  height: 48px;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4f8;
+
+  .currency {
+    color: var(--black);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+// @media (max-width: 1304px) {
+//   .FieldTextAmount {
+//     max-width: 451px;
+//   }
+// }
+
+// @media (max-width: 1000px) {
+//   .FieldTextAmount {
+//     max-width: 324px;
+//   }
+// }
+
+// @media (max-width: 767px) {
+//   .FieldTextAmount {
+//     max-width: 100%;
+//   }
+// }

@@ -1,0 +1,61 @@
+.DebitInfo {
+  max-width: 222px;
+  width: 100%;
+  padding: 20px 20px 20px 0;
+  background-color: #f6f7f8;
+  text-align: right;
+  font-weight: 500;
+}
+
+.Title {
+  margin-bottom: 9px;
+  color: var(--black65);
+  font-size: var(--fz15);
+  line-height: var(--lh19);
+}
+
+.Name,
+.Link,
+.Code {
+  margin-bottom: 9px;
+  color: #121a1f;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: right;
+}
+
+.Month {
+  color: #121a1f;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: right;
+}
+
+
+
+.Link {
+  color: var(--black);
+  font-size: var(--fz13);
+  line-height: var(--lh16);
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .DebitInfo {
+    max-width: 100%;
+    padding-left: 20px;
+  }
+
+  .Title {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+  }
+
+  .Name {
+    display: inline-block;
+    width: 50%;
+  }
+}

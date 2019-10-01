@@ -1,0 +1,230 @@
+.FormSend {
+  .Address,
+  .Amount,
+  .Comment {
+    position: relative;
+    p {
+      color: var(--black65);
+      font-size: var(--fz13);
+      font-weight: 500;
+      line-height: var(--lh16);
+      padding-bottom: 8px;
+    }
+    input {
+      height: 48px;
+      width: 100%;
+      border: 0;
+      background-color: rgba(#f0f4f8, 0.45);
+      font-size: var(--fz13);
+      color: #121a1f;
+
+      font-weight: 500;
+      line-height: var(--lh16);
+      padding-left: 15px;
+      text-overflow: ellipsis;
+      &::placeholder {
+        color: rgba(#121a1f, 0.35);
+      }
+    }
+    label {
+      position: relative;
+      display: block;
+    }
+  }
+}
+
+.Address {
+  margin-bottom: 28px;
+
+  input {
+    padding-right: 79px;
+  }
+
+  .UserIcon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 48px;
+    width: 69px;
+    padding: 15px 18px;
+    background-color: var(--lightBlueGray);
+    cursor: pointer;
+    div {
+      pointer-events: none;
+      position: relative;
+      svg {
+        pointer-events: none;
+        fill: var(--black);
+        transition: fill 0.2s ease-in-out;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 6px;
+        height: 6px;
+        border-bottom: 1px solid #3b424c;
+        border-right: 1px solid #3b424c;
+        transform: translateY(-6px) rotate(45deg);
+        transition: border-color 0.2s ease-in-out;
+      }
+    }
+    .ActiveList {
+      svg {
+        fill: var(--spaceBlue);
+      }
+      &:before {
+        border-color: var(--spaceBlue);
+        transform: translateY(-3px) rotate(45deg) scale(-1);
+      }
+    }
+  }
+}
+
+.Amount {
+  margin-bottom: 28px;
+  input {
+    padding-right: 79px;
+    &::placeholder {
+      text-transform: capitalize;
+    }
+    &:first-of-type {
+      padding-left: 43px;
+    }
+    &:last-of-type {
+      padding-left: 42px;
+    }
+  }
+  label {
+    z-index: 10;
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      fill: #bdc7cc;
+    }
+    &:first-of-type {
+      margin-bottom: 10px;
+      svg {
+        left: 10px;
+      }
+    }
+    &:last-of-type {
+      svg {
+        left: 19px;
+        width: 8px;
+        height: 15px;
+      }
+    }
+  }
+  .Currency {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 69px;
+    background-color: #f0f4f8;
+    div {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      p {
+        color: var(--black);
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+.AmountFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MoreLess {
+  display: flex;
+  align-items: center;
+  a {
+    color: rgba(#656a6d, 0.65);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: var(--lh16);
+    text-transform: uppercase;
+    transition: color 0.2s linear;
+    &:first-of-type {
+      margin-right: 12px;
+    }
+    &:hover {
+      color: rgba(#656a6d, 1);
+    }
+  }
+}
+.Comment {
+  margin-bottom: 35px;
+
+  input {
+    padding-right: 14px;
+  }
+}
+.Submit {
+  p {
+    color: var(--textBlack);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-align: center;
+    letter-spacing: 0.7px;
+    margin-bottom: 18px;
+  }
+}
+
+.AddressLabel {
+  margin: 0;
+}
+.AddressInput {
+  margin: 0;
+}
+.AddressBlock {
+  margin: 0;
+}
+
+.flexLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scanQR {
+  display: flex;
+  align-items: center;
+  color: var(--black35);
+  font-family: Montserrat;
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  margin-bottom: 8px;
+  cursor: pointer;
+
+  svg {
+    fill: #a4a4a4;
+    margin-right: 7px;
+  }
+
+  &:hover {
+    color: var(--spaceBlue);
+    svg {
+      fill: var(--spaceBlue);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .btn {
+    max-width: 428px;
+    margin: 0 auto;
+  }
+}

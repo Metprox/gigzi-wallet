@@ -1,0 +1,20 @@
+.NoTransactions {
+  text-align: center;
+  color: var(--black);
+  text-transform: uppercase;
+  padding: 41px 0 22px;
+
+  h2 {
+    opacity: 0.6;
+    font-size: var(--fz15);
+    line-height: var(--lh19);
+    font-weight: 500;
+
+    margin-bottom: 11px;
+  }
+  p {
+    font-size: var(--fz10);
+    line-height: var(--lh13);
+    font-weight: 500;
+  }
+}

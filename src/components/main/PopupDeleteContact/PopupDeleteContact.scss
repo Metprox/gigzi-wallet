@@ -1,0 +1,62 @@
+.PopupDeleteContact {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 40px 0 36px 0;
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24);
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+
+  h1 {
+    margin-bottom: 21px;
+    color: #000000;
+    font-size: var(--fz24);
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: var(--lh36);
+  }
+}
+
+.Description {
+  margin-bottom: 60px;
+  color: var(--black65);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+
+.Btns {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OffsetRight {
+  margin-right: 20px;
+}
+
+@media (max-width: 1304px) {
+  .PopupDeleteContact {
+    z-index: 4000;
+  }
+}
+
+@media (max-width: 565px) {
+  .PopupDeleteContact {
+    position: fixed;
+    top: inherit;
+    left: 50%;
+    max-width: 100%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+  }
+
+  .Btns {
+    padding: 0;
+  }
+}

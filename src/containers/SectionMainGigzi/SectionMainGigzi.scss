@@ -1,0 +1,127 @@
+.Gigzi {
+}
+
+.Transactions {
+  width: 100%;
+  max-width: 540px;
+}
+
+.Flex {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flexTitle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.wrapPagination {
+  width: 100%;
+  max-width: 82px;
+  display: none;
+}
+
+@media (max-width: 1304px) {
+  .Transactions {
+    max-width: 553px;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Flex {
+    flex-flow: column wrap;
+  }
+  .Transactions {
+    max-width: 100%;
+  }
+  .wrapPagination {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .Gigzi {
+    h1 {
+      padding: 0 17px;
+    }
+  }
+
+  .wrapPagination {
+    display: none;
+  }
+}
+
+.Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+.Left {
+  position: relative;
+  height: 42px;
+  width: 41px;
+  cursor: pointer;
+  transition: background 0.1s ease-in;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 16px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid var(--black85);
+    border-left: 1px solid var(--black85);
+    transform: translateY(-50%) rotate(45deg);
+    transition: border-color 0.1s ease-in;
+  }
+  &:hover {
+    background: var(--black);
+    &:before {
+      border-color: #fafafa;
+    }
+  }
+}
+.Right {
+  position: relative;
+  height: 42px;
+  width: 41px;
+  cursor: pointer;
+  transition: background 0.1s ease-in;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 16px;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid var(--black85);
+    border-bottom: 1px solid var(--black85);
+    transform: translateY(-50%) rotate(-45deg);
+    transition: border-color 0.1s ease-in;
+  }
+  &:hover {
+    background: var(--black);
+    &:before {
+      border-color: #fafafa;
+    }
+  }
+}
+
+.Disabled {
+  opacity: 0.3;
+  cursor: default;
+  &:hover {
+    background: transparent;
+    &:before {
+      border-color: var(--black85);
+    }
+  }
+}

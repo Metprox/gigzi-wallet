@@ -1,0 +1,105 @@
+.FormReceive {
+}
+.QrCode {
+  text-align: center;
+  padding-top: 23px;
+  img {
+    height: 120px;
+    width: 120px;
+    vertical-align: top;
+    margin-bottom: 30px;
+  }
+  p {
+    color: var(--black65);
+    font-size: var(--fz15);
+    font-weight: 500;
+    line-height: var(--lh19);
+    margin-bottom: 69px;
+  }
+}
+.Share {
+  margin-bottom: 36px;
+  div {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    p {
+      color: var(--black65);
+      font-size: var(--fz13);
+      font-weight: 500;
+      line-height: var(--lh16);
+    }
+  }
+  .ShareInput {
+    display: block;
+    width: 100%;
+    border: 0;
+    padding-right: 10px;
+    color: #121a1f;
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    margin-bottom: 25px;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 1000px) {
+  .QrCode {
+    img {
+      width: 180px;
+      height: 180px;
+    }
+    p {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .btn {
+    max-width: 428px;
+    margin: 0 auto;
+  }
+
+  .Address {
+    max-width: 351px;
+    margin: 0 auto;
+  }
+
+  .ShareInput {
+    max-width: 351px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .QrCode {
+    margin-top: -15px;
+    padding-top: 0;
+    img {
+      width: 160px;
+      height: 160px;
+    }
+    p {
+      width: 90%;
+      font-size: var(--fz13);
+      line-height: var(--lh16);
+      margin-bottom: 40px;
+    }
+  }
+
+  .Share {
+    div {
+      margin-bottom: 0;
+    }
+  }
+
+  .Share {
+    .Address {
+      margin-bottom: 12px;
+    }
+  }
+}

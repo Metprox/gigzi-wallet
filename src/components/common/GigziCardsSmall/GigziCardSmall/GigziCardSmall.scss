@@ -1,0 +1,174 @@
+.GigziCardSmall {
+  display: flex;
+  height: 64px;
+  // min-width: 147px;
+  // width: 147px;
+  padding: 12px 0 14px 15px;
+  margin-right: 16px;
+  background: #ffffff;
+  margin-bottom: 50px;
+
+  cursor: pointer;
+  transition: background 0.2s linear, box-shadow 0.2s linear;
+
+  svg {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05),
+      4px 4px 9px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+
+.Flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Name {
+  color: var(--black);
+  font-size: var(--fz16);
+  font-weight: 500;
+  line-height: var(--lh19);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.Currency {
+  color: var(--black65);
+  font-size: var(--fz10);
+  font-weight: 500;
+  line-height: var(--lh13);
+  text-transform: uppercase;
+}
+
+.Icon {
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.gzb {
+  path {
+    &:nth-child(2) {
+      fill: #1c242f;
+    }
+    &:last-child {
+      fill: #fff;
+    }
+  }
+}
+.gzg {
+  path {
+    &:nth-child(3) {
+      fill: #ffb400;
+    }
+    &:last-child {
+      fill: #000;
+    }
+  }
+}
+.gzs {
+  path {
+    &:nth-child(2) {
+      fill: #c0c0c0;
+    }
+    &:last-child {
+      fill: #000;
+    }
+  }
+}
+.gzp {
+  path {
+    &:nth-child(2) {
+      fill: #ffcb7a;
+    }
+    &:last-child {
+      fill: #000;
+    }
+  }
+}
+
+.dollar {
+  height: 23px;
+  width: 12px;
+}
+
+.euro,
+.dollar {
+  fill: var(--black);
+  rect {
+    fill: #f0f4f8;
+  }
+}
+
+.eth {
+  rect {
+    fill: #77d3be;
+  }
+  fill: #fff;
+}
+
+//Active Cards
+.ActiveCard {
+  background-color: #1c2830;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05), 4px 4px 9px 0 rgba(0, 0, 0, 0.12);
+
+  .Name {
+    color: #fff;
+  }
+  .Currency {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  .gzb,
+  .gzs,
+  .gzp {
+    path {
+      &:nth-child(2) {
+        fill: #fff;
+      }
+      &:last-child {
+        fill: #000;
+      }
+    }
+  }
+  .gzg {
+    path {
+      &:nth-child(3) {
+        fill: #fff;
+      }
+      &:last-child {
+        fill: #000;
+      }
+    }
+  }
+  .dollar,
+  .euro {
+    rect {
+      fill: #fff;
+    }
+  }
+  .eth {
+    rect {
+      fill: #fff;
+    }
+    fill: #000;
+  }
+}
+
+// @media (max-width: 1000px) {
+//   .GigziCardSmall {
+//     // width: 164px;
+//   }
+// }
+
+
+
+@media (max-width: 767px) {
+  .GigziCardSmall {
+    margin-right: 15px;
+  }
+}

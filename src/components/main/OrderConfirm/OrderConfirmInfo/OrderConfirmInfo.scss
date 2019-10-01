@@ -1,0 +1,100 @@
+.OrderConfirmInfo {
+  padding: 23px 0 28px;
+  width: 100%;
+  max-width: 356px;
+  background-color: rgba(#f8fafc, 0.8);
+  h2 {
+    padding-bottom: 17px;
+    padding-left: 20px;
+    color: var(--black85);
+    font-size: var(--fz18);
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: var(--lh28);
+    border-bottom: 2px solid var(--smokyWhite);
+    text-transform: uppercase;
+  }
+}
+
+.Item {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--smokyWhite);
+  &:last-of-type {
+    border: 0;
+    padding-bottom: 0;
+    span {
+      &:first-of-type {
+        width: 20%;
+      }
+      &:last-of-type {
+        width: 80%;
+      }
+    }
+  }
+  span {
+    &:first-of-type {
+      color: rgba(#0e151c, 0.6);
+      font-size: var(--fz13);
+      font-weight: 500;
+      line-height: var(--lh16);
+    }
+    &:last-of-type {
+      width: 60%;
+      color: var(--black);
+      font-size: var(--fz15);
+      font-weight: 500;
+      line-height: var(--lh19);
+      text-align: right;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+.Verify,
+.Edit {
+  padding-top: 5px;
+  width: 100%;
+  cursor: pointer;
+  p {
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-align: right;
+    text-transform: uppercase;
+  }
+}
+
+.Verify {
+  p {
+    color: var(--spaceBlue85);
+  }
+}
+
+.Edit {
+  p {
+    color: var(--spaceBlue85);
+  }
+}
+
+@media (max-width: 1304px) {
+  .OrderConfirmInfo {
+    max-width: 370px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .OrderConfirmInfo {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .OrderConfirmInfo {
+    margin-top: 20px;
+  }
+}

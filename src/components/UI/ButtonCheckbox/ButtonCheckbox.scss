@@ -1,0 +1,56 @@
+.ButtonCheckbox {
+  position: relative;
+  width: 100%;
+  label {
+    padding-left: 24px;
+    color: #ff605e;
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-transform: none;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 14px;
+      width: 14px;
+      border: 1px solid var(--black85);
+      transform: translateY(-50%);
+    }
+    &:after {
+      display: none;
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: 3px;
+      height: 6px;
+      width: 8px;
+      border-left: 1px solid var(--black);
+      border-bottom: 1px solid var(--black);
+      opacity: 0.85;
+      transform: rotate(-45deg);
+    }
+  }
+  input {
+    position: absolute;
+    background: transparent;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    &:checked {
+      & + label {
+        color: #44c897;
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
+}

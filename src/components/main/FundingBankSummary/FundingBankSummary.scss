@@ -1,0 +1,88 @@
+.FundingBankSummary {
+  padding-top: 22px;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    &:nth-child(2n) {
+      background-color: var(--lightBlueGray45);
+    }
+
+    p {
+      width: 50%;
+
+      &:first-of-type {
+        color: var(--black65);
+        font-size: var(--fz13);
+        font-weight: 500;
+        line-height: var(--lh16);
+        text-align: left;
+      }
+      &:last-of-type {
+        color: var(--black);
+        font-size: var(--fz15);
+        font-weight: 500;
+        line-height: var(--lh19);
+        text-align: right;
+      }
+    }
+  }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--black);
+  font-size: var(--fz15);
+  font-weight: 500;
+  line-height: var(--lh19);
+  text-align: right;
+
+  span:first-of-type {
+    text-transform: uppercase;
+  }
+}
+
+.iban,
+.currency,
+.code,
+.amount {
+  // text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  .FundingBankSummary {
+    padding-top: 0;
+    li {
+      padding-left: 20px;
+      padding-right: 20px;
+      p {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .FundingBankSummary {
+    li {
+      padding-left: 17px;
+      padding-right: 17px;
+      align-items: flex-start;
+      p {
+        &:first-of-type {
+          width: 51%;
+        }
+        span {
+          &:last-of-type {
+            width: 60%;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}

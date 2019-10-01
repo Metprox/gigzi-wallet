@@ -1,0 +1,74 @@
+.FieldSelected {
+  width: 100%;
+}
+
+.Input {
+  position: relative;
+  margin: 0 0 36px 0;
+  padding-left: 15px;
+  position: relative;
+  height: 48px;
+  width: 100%;
+  background-color: var(--lightBlueGray45);
+  cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    height: 7px;
+    width: 7px;
+    border-bottom: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+    transform: translateY(-50%) rotate(45deg);
+    transition: border-color 0.2s esae-in, transform 0.2s ease-in;
+  }
+  .Holder {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    transform: translateY(-50%);
+
+    span {
+      color: var(--black65);
+    }
+  }
+}
+
+.active {
+  &:before {
+    border-color: var(--spaceBlue);
+    transform: rotate(-45deg) scaleY(-1);
+  }
+}
+
+.label {
+  margin-bottom: 8px;
+  color: var(--black65);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+
+// @media (max-width: 1304px) {
+//   .FieldSelected {
+//     max-width: 451px;
+//   }
+// }
+
+// @media (max-width: 1000px) {
+//   .FieldSelected {
+//     // max-width: 324px;
+//     max-width: 100%;
+//   }
+// }
+
+// @media (max-width: 767px) {
+//   .FieldSelected {
+//     max-width: 100%;
+//   }
+// }

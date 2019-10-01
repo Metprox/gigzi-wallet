@@ -1,0 +1,95 @@
+.FundingBankInfo {
+  padding-top: 26px;
+  label {
+    display: block;
+    max-width: 440px;
+    cursor: pointer;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+    &:last-of-type {
+      margin-bottom: 60px;
+    }
+
+    & > p {
+      margin-bottom: 8px;
+      color: var(--black65);
+      font-size: var(--fz13);
+      font-weight: 500;
+      line-height: var(--lh16);
+    }
+    input {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      height: 48px;
+      width: 100%;
+      padding: 0 25px 0 15px;
+      color: var(--black);
+      font-size: var(--fz13);
+      font-weight: 500;
+      line-height: var(--lh16);
+      background-color: var(--lightBlueGray45);
+      &::placeholder {
+        color: var(--black35);
+      }
+    }
+  }
+}
+
+.currencyInput {
+  position: relative;
+  cursor: pointer;
+  input {
+    cursor: pointer;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    height: 7px;
+    width: 7px;
+    border-right: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 0.1s linear, border-color 0.1s linear;
+  }
+}
+
+.currencyInputActive {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    height: 7px;
+    width: 7px;
+    border-right: 1px solid var(--spaceBlue);
+    border-bottom: 1px solid var(--spaceBlue);
+    transform: translateY(-20%) rotate(45deg) scale(-1);
+  }
+}
+
+@media (max-width: 1304px) {
+  .FundingBankInfo label {
+    max-width: 451px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .FundingBankInfo {
+    label {
+      max-width: 324px;
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .FundingBankInfo {
+    label {
+      max-width: 100%;
+    }
+  }
+}

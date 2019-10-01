@@ -1,0 +1,18 @@
+.Flex {
+  display: flex;
+  flex-flow: row nowrap;
+  height: calc(100vh - 60px);
+}
+
+@media (max-width: 1304px) {
+  .Flex {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .Flex {
+    padding-top: 60px;
+    height: auto;
+  }
+}

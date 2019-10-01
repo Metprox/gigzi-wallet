@@ -1,0 +1,38 @@
+.FieldText {
+  width: 100%;
+  max-width: 410px;
+  input {
+    border: 0;
+    padding: 0;
+    padding-left: 15px;
+    height: 48px;
+    width: 100%;
+    background-color: var(--lightBlueGray45);
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    &::placeholder {
+      color: var(--black35);
+    }
+  }
+  p {
+    margin-bottom: 8px;
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+@media (max-width: 1000px) {
+  .FieldText {
+    max-width: 324px;
+  }
+}
+
+@media (max-width: 767px) {
+  .FieldText {
+    max-width: 100%;
+  }
+}

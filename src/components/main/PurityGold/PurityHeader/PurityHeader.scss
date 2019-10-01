@@ -1,0 +1,45 @@
+.PurityHeader {
+  padding: 11px 0 10px 0;
+  background-color: #f8fafc;
+  span {
+    color: #202a31;
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh13);
+    text-align: left;
+    letter-spacing: 0.38px;
+    text-transform: uppercase;
+    &:first-of-type {
+      text-align: left;
+      width: 100%;
+      max-width: 150px;
+    }
+    &:nth-of-type(2) {
+      width: 100%;
+      max-width: 100px;
+      text-align: left;
+    }
+    &:last-of-type {
+      width: 100%;
+      max-width: 133px;
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .PurityHeader {
+    span {
+      &:first-of-type {
+        max-width: 128px;
+      }
+      &:nth-of-type(2) {
+        max-width: 84px;
+      }
+      &:last-of-type {
+        max-width: 133px;
+        text-align: left;
+      }
+    }
+  }
+}

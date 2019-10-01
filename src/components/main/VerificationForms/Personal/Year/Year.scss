@@ -1,0 +1,79 @@
+.Year {
+  position: relative;
+  padding-left: 15px;
+  height: 48px;
+  flex: 1;
+  background-color: var(--lightBlueGray45);
+  color: var(--black);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    height: 6px;
+    width: 6px;
+    border-bottom: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 0.1s ease-in-out, border-color 0.1s ease-in-out;
+  }
+  .CurrentVal {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}
+
+.List {
+  position: absolute;
+  left: 0;
+  top: 48px;
+  width: 100%;
+  height: 281px;
+  overflow-y: scroll;
+  background-color: #fff;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.08);
+  li {
+    padding: 15px 0 15px 15px;
+    border-bottom: solid 1px var(--smokyWhite);
+    transition: background 0.1s ease-in-out;
+
+    span {
+      color: var(--black);
+      font-size: var(--fz13);
+      font-weight: 500;
+      line-height: var(--lh16);
+      transition: color 0.1s ease-in-out;
+    }
+
+    &:hover {
+      background: #1c2830;
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.ActiveArrow {
+  &:before {
+    border-color: var(--spaceBlue);
+    transform: translateY(0%) rotate(45deg) scale(-1);
+  }
+}
+
+.CurrentVal.CurrentValActive {
+  color: var(--black);
+}
+
+@media (max-width: 565px) {
+  .List {
+    max-height: 141px;
+  }
+}

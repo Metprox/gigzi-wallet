@@ -1,0 +1,32 @@
+.SectionDebitSettings {
+}
+
+.Header {
+  padding: 20px 0 21px;
+  background-color: #ffffff;
+  border-bottom: 2px solid var(--smokyWhite);
+  h6 {
+    text-transform: uppercase;
+  }
+}
+
+.Body {
+  padding: 17px 0 76px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .Body {
+    padding: 40px 0 124px;
+  }
+}
+
+@media (max-width: 767px) {
+  .backstep {
+    padding: 0 17px;
+  }
+
+  .Body {
+    padding-top: 20px;
+  }
+}

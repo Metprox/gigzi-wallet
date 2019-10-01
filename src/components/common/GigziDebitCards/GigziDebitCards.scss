@@ -1,0 +1,23 @@
+.GigziDebitCards {
+  position: relative;
+  padding-bottom: 20px;
+  z-index: 1;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+:global {
+  .slick-list {
+    overflow: visible;
+  }
+}
+
+@media (max-width: 767px) {
+  .GigziDebitCards {
+    padding-left: 17px;
+  }
+}

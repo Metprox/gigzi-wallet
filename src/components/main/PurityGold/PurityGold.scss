@@ -1,0 +1,35 @@
+.PurityGold {
+  max-width: 540px;
+  width: 100%;
+  padding-top: 20px;
+  background-color: #ffffff;
+  h2 {
+    margin-bottom: 20px;
+    color: var(--black);
+    font-size: var(--fz18);
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: var(--lh28);
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1304px) {
+  .PurityGold {
+    max-width: 553px;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .PurityGold {
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .PurityGold {
+    margin-bottom: 15px;
+  }
+}

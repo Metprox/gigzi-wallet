@@ -1,0 +1,18 @@
+.InputList {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  width: 131px;
+  max-height: 269px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.08);
+  z-index: 20;
+  overflow-y: auto;
+}
+
+
+@media (max-width: 767px) {
+  .InputList {
+    width: 111px;
+  }
+}

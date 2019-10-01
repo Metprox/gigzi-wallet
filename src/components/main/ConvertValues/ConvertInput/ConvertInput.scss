@@ -1,0 +1,91 @@
+.ConvertInput {
+  position: relative;
+  padding-right: 15px;
+  height: 62px;
+  width: 100%;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 429px;
+    height: 1px;
+    background: #fff;
+    z-index: 10;
+  }
+  background-color: var(--lightBlueGray45);
+  span {
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+
+  svg {
+    width: 21px;
+  }
+}
+
+.ValueInput {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 70%;
+  color: var(--black);
+  padding-right: 40px;
+  background: transparent;
+}
+.NameInput {
+  color: var(--black35);
+}
+
+.CurrentVal {
+  position: relative;
+  margin-right: 16px;
+  min-width: 131px;
+  width: 131px;
+  height: 100%;
+  background-color: var(--lightBlueGray);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  cursor: pointer;
+  svg {
+    margin-right: 20px;
+  }
+  span {
+    position: relative;
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-transform: uppercase;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -16px;
+      width: 6px;
+      height: 6px;
+      border-right: 1px solid var(--black);
+      border-bottom: 1px solid var(--black);
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ConvertInput {
+    &:before {
+      width: 70%;
+    }
+  }
+  .CurrentVal {
+    min-width: 111px;
+    width: 111px;
+    padding-left: 15px;
+    svg {
+      margin-right: 15px;
+    }
+  }
+}

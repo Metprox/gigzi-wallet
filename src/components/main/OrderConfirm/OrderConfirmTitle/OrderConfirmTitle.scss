@@ -1,0 +1,28 @@
+.Title {
+  padding: 15px 0 15px;
+  border-bottom: solid 2px var(--smokyWhite);
+
+  h6 {
+    text-transform: uppercase;
+  }
+
+  span {
+    color: var(--black35);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+.Description {
+  margin-bottom: 36px;
+  padding: 7px 0 10px;
+  background: rgba(#F8FAFC, 1);
+  p {
+    color: #202a31;
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh14);
+    text-transform: uppercase;
+  }
+}

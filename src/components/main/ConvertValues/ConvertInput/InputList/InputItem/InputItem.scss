@@ -1,0 +1,36 @@
+.InputItem {
+  display: flex;
+  align-items: center;
+  padding: 14px 0 14px 20px;
+  border-bottom: 2px solid var(--smokyWhite);
+  cursor: pointer;
+  transition: background .1s ease-in;
+  svg {
+    margin-right: 20px;
+  }
+  &:hover {
+    background: var(--black);
+    .Name {
+      color: #fff;
+    }
+  }
+}
+
+.Name {
+  color: var(--black);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  text-transform: uppercase;
+  transition: color .1s ease-in;
+}
+
+@media (max-width: 767px) {
+  .InputItem {
+    width: 111px;
+    padding-left: 15px;
+    svg {
+      margin-right: 15px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.FlagItemAll {
+  width: 58px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  &:not(:nth-of-type(4n)) {
+    margin-right: 76px;
+  }
+
+  &:hover {
+    .Name {
+      color: var(--spaceBlue);
+    }
+    .Flag {
+      opacity: 1;
+    }
+  }
+}
+
+.Name {
+  width: 100%;
+  max-width: 32px;
+  color: var(--black35);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+
+.Flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 20px;
+  opacity: 0.35;
+
+  svg {
+    width: 20px;
+    height: 12px;
+  }
+}
+
+.FlagItemAll.activeFlag {
+  .Flag {
+    opacity: 1;
+  }
+
+  .Name {
+    color: var(--black);
+  }
+}
+
+@media (max-width: 494px) {
+  .FlagItemAll {
+    width: 33.3%;
+    justify-content: center;
+    margin: 0;
+    &:not(:nth-of-type(4n)) {
+      margin: 0;
+    }
+  }
+
+  .Name {
+    margin-right: 8px;
+  }
+
+  .Flag {
+    max-width: 30px;
+    svg {
+    width: 30px;
+    height: 18px;
+  }
+  }
+}

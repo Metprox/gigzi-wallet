@@ -1,0 +1,234 @@
+.ItemContacts {
+  position: relative;
+  display: flex;
+  height: 58px;
+  padding: 0 20px;
+  min-height: 58px;
+  border-top: 1px solid var(--smokyWhite);
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+
+  &:hover {
+    background: var(--black);
+    .Name {
+      p {
+        color: #fff;
+      }
+    }
+    .Code {
+      color: rgba(#ffffff, 0.65);
+    }
+    .More {
+      display: block;
+    }
+  }
+  &:nth-last-of-type(2),
+  &:nth-last-of-type(3) {
+    .wrapEditor {
+      position: absolute;
+      top: -205%;
+      right: -20px;
+    }
+  }
+}
+
+.Name {
+  display: inline-flex;
+  align-items: center;
+  // width: 380px;
+  flex: 0.8;
+  height: 100%;
+  vertical-align: top;
+  p {
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-transform: capitalize;
+    transition: color 0.1s ease-in-out;
+  }
+}
+
+.Address {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  // width: 520px;
+  flex: 1;
+  height: 100%;
+  vertical-align: top;
+}
+
+.Code {
+  margin-left: 15px;
+  color: var(--black65);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  transition: color 0.1s ease-in-out;
+}
+
+.More {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 100%;
+}
+
+.Dots {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -7px;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -7px;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+  }
+}
+
+.wrapEditor {
+  position: absolute;
+  top: 80%;
+  right: -20px;
+}
+
+.ActiveItem {
+  background: var(--black);
+  .Name {
+    p {
+      color: #fff;
+    }
+  }
+  .Code {
+    color: rgba(#ffffff, 0.65);
+  }
+  .More {
+    display: block;
+  }
+}
+
+.MoreActive {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 100%;
+  z-index: 10;
+}
+
+.defaultNameMobile {
+  display: none;
+}
+
+.moreMobile {
+  display: none;
+}
+
+@media (max-width: 1304px) {
+  .ItemContacts {
+    &:hover {
+      background: transparent;
+      .Name {
+        p {
+          color: var(--black);
+        }
+      }
+      .Code {
+        color: var(--black65);
+      }
+    }
+  }
+
+  .Dots {
+    background: var(--black25);
+    &:before,
+    &:after {
+      background: var(--black25);
+    }
+  }
+
+  .More {
+    display: block;
+  }
+
+  .ActiveItem {
+    background: transparent;
+    .Name {
+      p {
+        color: var(--black);
+      }
+    }
+    .Code {
+      color: var(--black65);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .Name {
+    flex: 0 0 220px;
+    padding-right: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ItemContacts {
+    padding: 0 17px;
+  }
+
+  .Address {
+    display: none;
+  }
+
+  .Name {
+    flex: 0 1 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .defaultNameMobile {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .moreMobile {
+    display: block;
+  }
+
+  .groupLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .wrapEditor {
+    right: 0;
+  }
+}

@@ -1,0 +1,70 @@
+.MultiCurrency {
+  position: relative;
+  p {
+    padding-right: 13px;
+    color: #949699;
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh13);
+    transition: color 0.1s ease-in-out;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 6px;
+      height: 6px;
+      border-right: 1px solid #949699;
+      border-bottom: 1px solid #949699;
+      transform: translateY(30%) rotate(45deg);
+      transition: border-color 0.1s ease-in-out;
+    }
+  }
+}
+
+.Active {
+  p {
+    color: var(--spaceBlue);
+    &:before {
+      border-color: var(--spaceBlue);
+      transform: translateY(80%) rotate(45deg) scale(-1);
+    }
+  }
+}
+
+.List {
+  position: absolute;
+  top: 20px;
+  right: -21px;
+  width: 220px;
+  padding: 8px 18px;
+  border: 1px solid #f3f3f3;
+  background: #fff;
+  box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.06);
+  z-index: 200;
+}
+
+.Item {
+  padding: 10px 0;
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  &:not(:last-of-type) {
+    border-bottom: 1px solid var(--smokyWhite);
+  }
+}
+
+.CurrencyName {
+  color: var(--black65);
+}
+.CurrencyValue {
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  .List {
+    width: 224px;
+  }
+}

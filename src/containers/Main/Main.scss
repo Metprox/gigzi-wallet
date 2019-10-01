@@ -1,0 +1,30 @@
+.Main {
+  padding: 20px 40px 25px 40px;
+  width: 100%;
+  max-width: 1020px;
+  background-color: #f6f7f8;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.14);
+  overflow: scroll;
+
+  h1 {
+    margin-bottom: 20px;
+    color: var(--black85);
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1304px) {
+  .Main {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Main {
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

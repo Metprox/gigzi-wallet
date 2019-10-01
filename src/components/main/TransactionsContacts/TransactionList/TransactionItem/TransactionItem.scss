@@ -1,0 +1,223 @@
+.TransactionItem {
+  width: 100%;
+  padding: 15px 0 17px;
+  background: #fff;
+  border-top: solid 1px #f6f6f6;
+  transition: background, box-shadow 0.1s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background: #202a31;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.04);
+    .green,
+    .red {
+      fill: #fff;
+    }
+    .DescriptionTop {
+      color: #ffffff;
+    }
+    .DescriptionBottom {
+      color: rgba(#fff, 0.65);
+    }
+  }
+  &:last-of-type {
+    border-bottom: solid 1px var(--smokyWhite);
+  }
+}
+
+.Flex {
+  display: flex;
+  width: 100%;
+}
+
+.Icon {
+  padding: 4px 20px 0 0;
+  width: 40px;
+  svg {
+    width: 25px;
+  }
+}
+
+.Description {
+  width: 100%;
+  p {
+    display: flex;
+    justify-content: space-between;
+  }
+  .DescriptionTop {
+    margin-bottom: 5px;
+    color: var(--black);
+    font-size: var(--fz15);
+    font-weight: 500;
+    line-height: var(--lh19);
+  }
+  .DescriptionBottom {
+    color: var(--black65);
+    font-size: var(--fz13);
+    line-height: var(--lh16);
+  }
+}
+
+.Popup {
+  padding-top: 27px;
+}
+
+.Address,
+.Comment {
+  display: flex;
+  p {
+    margin-bottom: 8px;
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+  span {
+    color: #121a1f;
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+.Address {
+  margin-bottom: 19px;
+  p {
+    width: 100%;
+  }
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.Comment {
+  flex-flow: column wrap;
+}
+
+.Add {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  svg {
+    fill: #656a6d;
+    transition: fill 0.2s ease-in;
+  }
+  span {
+    margin: 0;
+    margin-right: 7px;
+    color: #656a6d;
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-transform: uppercase;
+    transition: color 0.2s ease-in;
+  }
+
+  &:hover {
+    svg {
+      fill: var(--spaceBlue);
+    }
+    span {
+      color: var(--spaceBlue);
+    }
+  }
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.green {
+  fill: #44c897;
+}
+.red {
+  fill: #ff605e;
+}
+
+.TransactionActive {
+  width: 100%;
+  padding: 15px 0 17px;
+  border-top: solid 2px var(--smokyWhite);
+  transition: background, box-shadow 0.1s ease-in-out;
+  cursor: pointer;
+  &:last-of-type {
+    border-bottom: solid 2px var(--smokyWhite);
+  }
+  &:hover {
+    // background: #202a31;
+    // box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.04);
+    // .green,
+    // .red {
+    //   fill: #fff;
+    // }
+    // .Address {
+    //   p,
+    //   span {
+    //     color: rgba(255, 255, 255, 0.65);
+    //   }
+    // }
+    // .Comment {
+    //   p,
+    //   span {
+    //     color: rgba(255, 255, 255, 0.65);
+    //   }
+    // }
+    // .Add {
+    //   &:hover {
+    //     svg {
+    //       fill: var(--spaceBlue);
+    //     }
+    //     span {
+    //       color: var(--spaceBlue);
+    //     }
+    //   }
+    // }
+    // .DescriptionTop {
+    //   color: #ffffff;
+    // }
+    // .DescriptionBottom {
+    //   color: rgba(#fff, 0.65);
+    // }
+  }
+  &:last-of-type {
+    border-bottom: solid 1px var(--smokyWhite);
+  }
+}
+
+@media (max-width: 767px) {
+  .TransactionItem {
+    &:hover {
+      background: transparent;
+      box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.04);
+
+      .green {
+        fill: #44c897;
+      }
+      .red {
+        fill: #ff605e;
+      }
+      .DescriptionTop {
+        color: var(--black);
+      }
+      .DescriptionBottom {
+        color: var(--black65);
+      }
+    }
+  }
+  .Description {
+    .DescriptionTop {
+      font-size: var(--fz13);
+      line-height: var(--lh16);
+    }
+  }
+
+  .Icon {
+    padding: 0 15px 0 0;
+  }
+  .Address {
+    p + span {
+      display: inline-block;
+      width: 164px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

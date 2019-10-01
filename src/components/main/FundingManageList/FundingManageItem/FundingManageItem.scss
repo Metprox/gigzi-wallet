@@ -1,0 +1,241 @@
+.FundingManageItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 58px;
+  min-height: 58px;
+  border-top: 2px solid var(--smokyWhite);
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+
+  &:hover {
+    background: #202a31;
+    .bank,
+    .currency {
+      & > p {
+        color: #fff;
+      }
+    }
+    .location {
+      p {
+        color: rgba(#ffffff, 0.65);
+      }
+    }
+    .More {
+      display: block;
+    }
+  }
+}
+
+.bank {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  vertical-align: top;
+  & > p {
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-transform: capitalize;
+    transition: color 0.1s ease-in-out;
+  }
+}
+
+.bank {
+  flex: 2;
+}
+
+.currency {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  vertical-align: top;
+  & > p {
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-transform: capitalize;
+    transition: color 0.1s ease-in-out;
+  }
+}
+
+.location {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  vertical-align: top;
+
+  p {
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    transition: color 0.1s ease-in-out;
+  }
+}
+
+.More {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 100%;
+}
+
+.Dots {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -7px;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -7px;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+  }
+}
+
+.ActiveItem {
+  background: #202a31;
+  .bank,
+  .currency {
+    & > p {
+      color: #fff;
+    }
+  }
+  .location {
+    p {
+      color: rgba(#ffffff, 0.65);
+    }
+  }
+  .More {
+    display: block;
+  }
+}
+
+.MoreActive {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 100%;
+  z-index: 10;
+}
+
+@media (max-width: 1304px) {
+  .bank {
+    flex: 0 0 380px;
+  }
+  .location {
+    flex: 0 0 240px;
+  }
+
+  .FundingManageItem {
+    &:hover {
+      background: transparent;
+      .bank {
+        p {
+          color: var(--black);
+        }
+      }
+      .currency, .location {
+        p {
+          color: var(--black65);
+        }
+      }
+    }
+  }
+
+  .ActiveItem {
+    background: transparent;
+    .bank {
+      p {
+        color: var(--black);
+      }
+    }
+    .currency {
+      p {
+        color: var(--black65);
+      }
+    }
+  }
+
+  .More {
+    display: block;
+  }
+
+  .Dots {
+    background: var(--black25);
+    &:before,
+    &:after {
+      background: var(--black25);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .bank {
+    flex: 0 1 220px;
+  }
+  .location {
+    flex: 0 1 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  .FundingManageItem {
+    padding: 0 17px;
+  }
+  .bank {
+    flex: 0 1 177px;
+  }
+  .location {
+    display: none;
+  }
+  .More {
+    // right: 0;
+  }
+}
+
+.ItemContacts {
+  &:hover {
+    background: transparent;
+    .Name {
+      p {
+        color: var(--black);
+      }
+    }
+    .Code {
+      color: var(--black65);
+    }
+  }
+}

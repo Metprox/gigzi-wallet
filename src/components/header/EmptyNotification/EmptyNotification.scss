@@ -1,0 +1,29 @@
+.EmptyNotification {
+  position: absolute;
+  top: 100%;
+  right: -50px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  padding: 40px 0;
+  background: #fff;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.08);
+
+  p {
+    color: var(--black65);
+    font-size: var(--fz13);
+    line-height: var(--lh16);
+    font-weight: 500;
+    letter-spacing: 0.43px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 767px) {
+  .EmptyNotification {
+    // right: 0;
+  }
+}

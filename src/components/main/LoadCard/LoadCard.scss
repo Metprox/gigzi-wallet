@@ -1,0 +1,168 @@
+.LoadCard {
+  padding: 20px 0;
+  max-width: 380px;
+  width: 100%;
+  // margin-top: -130px;
+  background-color: #ffffff;
+
+  h6 {
+    text-transform: uppercase;
+  }
+}
+
+.TitleWrap {
+  margin-bottom: 40px;
+}
+
+.Settings {
+  cursor: pointer;
+  svg {
+    margin-right: 7px;
+  }
+  p {
+    color: var(--black35);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+.From {
+  margin-bottom: 26px;
+  & > p {
+    margin-bottom: 8px;
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+.FromValue {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 48px;
+  width: 100%;
+  background-color: var(--lightBlueGray45);
+  cursor: pointer;
+  p {
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    span {
+      color: var(--black65);
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #a3a4a4;
+    border-bottom: 1px solid #a3a4a4;
+    transform: translateY(-110%) rotate(45deg);
+  }
+}
+
+.Amount {
+  margin-bottom: 35px;
+  & > p {
+    margin-bottom: 8px;
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+.AmountValue {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 48px;
+  width: 100%;
+  background-color: var(--lightBlueGray45);
+  input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    padding-right: 79px;
+    background: transparent;
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+.AmountCurrency {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 69px;
+  background: var(--lightBlueGray);
+  span {
+    color: #202a31;
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.DescBtn {
+  margin-bottom: 18px;
+  color: var(--black);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  text-align: center;
+}
+
+@media (max-width: 1304px) {
+  .LoadCard {
+    max-width: 391px;
+  }
+
+  .TitleWrap {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .LoadCard {
+    order: -1;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .From,
+  .Amount {
+    padding: 0 20px;
+  }
+
+  .btnSubmit {
+    max-width: 428px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .From,
+  .Amount {
+    padding: 0;
+  }
+}

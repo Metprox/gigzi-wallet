@@ -1,0 +1,58 @@
+.FundingFundsBtn {
+  flex: 0;
+  padding: 10px 0 11px;
+  border-bottom: 1px solid var(--smokyWhite);
+}
+
+.Flex {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Add,
+.Withdraw {
+  border: 1px solid var(--smokyWhite);
+  cursor: pointer;
+
+  transition: background 0.1s linear, border-color 0.1s linear;
+  p {
+    padding: 13px 30px;
+    color: var(--black35);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-transform: uppercase;
+    transition: color 0.1s linear;
+  }
+  &:hover {
+    border-color: var(--black);
+    background: var(--black);
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.Active {
+  border-color: var(--black);
+  background: var(--black);
+  p {
+    color: #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  .Add,
+  .Withdraw {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

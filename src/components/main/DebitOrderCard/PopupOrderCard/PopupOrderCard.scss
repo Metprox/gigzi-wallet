@@ -1,0 +1,99 @@
+.PopupOrderCard {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 40px 0 36px;
+  max-width: 450px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24);
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+
+  h2 {
+    margin-bottom: 65px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.Close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.BtnWrap {
+  margin: 0 auto;
+  width: 340px;
+}
+
+.BtnDesc {
+  margin-bottom: 34px;
+
+  p {
+    color: var(--black45);
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh16);
+    span {
+      color: var(--black);
+    }
+  }
+}
+
+.FieldType {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f6f6f6;
+  p {
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+.nameCard {
+  p {
+    text-align: right;
+    &:first-of-type {
+      margin-bottom: 5px;
+      color: var(--black);
+      font-size: var(--fz16);
+      font-weight: 500;
+      line-height: var(--lh19);
+      text-transform: uppercase;
+    }
+  }
+}
+
+.gigziFee {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 1304px) {
+  .PopupOrderCard {
+    z-index: 4000;
+  }
+}
+
+@media (max-width: 767px) {
+  .PopupOrderCard {
+    max-width: 375px;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .PopupOrderCard {
+    top: inherit;
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+    transform: translate(-50%, 0);
+  }
+}

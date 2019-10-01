@@ -1,0 +1,67 @@
+.FundingManageAccount {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Header {
+  flex: 0;
+  padding: 14px 0 15px;
+  &Flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h6 {
+    text-transform: uppercase;
+  }
+}
+
+.Body {
+  flex: 1;
+  background: #fff;
+}
+
+.link {
+  width: 160px;
+}
+
+@media (max-width: 767px) {
+  .Header {
+    h6 {
+      margin-bottom: 0;
+    }
+  }
+  .HeaderFlex {
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .link {
+    width: 160px;
+  }
+
+  .backstep {
+    padding-left: 17px;
+  }
+}
+
+@media (max-width: 565px) {
+  .Header {
+    h6 {
+      margin-bottom: 20px;
+    }
+  }
+  .HeaderFlex {
+    flex-flow: column wrap;
+    align-items: flex-start;
+  }
+
+  .link {
+    width: 100%;
+  }
+
+  .backstep {
+    padding-left: 17px;
+  }
+}

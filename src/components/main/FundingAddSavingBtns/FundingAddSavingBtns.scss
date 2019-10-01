@@ -1,0 +1,22 @@
+.FundingAddSavingBtns {
+  align-self: flex-end;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  // margin-bottom: calc(100vh - 831px);
+  // padding: 0 20px;
+}
+
+.print {
+  margin-right: 20px;
+}
+.download {
+}
+
+@media (max-width: 767px) {
+  .print {
+    margin-right: 15px;
+  }
+}

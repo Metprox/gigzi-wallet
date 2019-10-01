@@ -1,0 +1,44 @@
+.ConvertValues {
+  padding: 30px 0 0;
+  width: 100%;
+  max-width: 540px;
+  background: #ffffff;
+}
+
+.ValuesWrap {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.ConvertArrowWrap {
+  position: absolute;
+  top: 52%;
+  right: 24px;
+  cursor: pointer;
+}
+
+.Description {
+  margin-bottom: 10px;
+  color: var(--black65);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+
+@media (max-width: 1304px) {
+  .ConvertValues {
+    max-width: 553px;
+    margin-right: 16px;
+  }
+
+  .ConvertArrowWrap {
+    right: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ConvertValues {
+    margin: 0;
+    max-width: 100%;
+  }
+}

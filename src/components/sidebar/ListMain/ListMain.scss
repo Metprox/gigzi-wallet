@@ -1,0 +1,98 @@
+.List {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 13px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 260px;
+    border: 1px solid #ffffff;
+    opacity: 0.03;
+  }
+}
+
+.Item {
+  position: relative;
+}
+
+.Link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 9.5px 25px 9.5px 18px;
+  border-left: solid 2px transparent;
+  opacity: 1;
+  color: var(--white);
+  font-size: var(--fz13);
+  line-height: var(--lh19);
+  transition: border-color 0.2s linear, background 0.2s linear,
+    color 0.2s linear;
+
+  &:hover {
+    border-color: var(--spaceBlue);
+    background: #233039;
+    color: var(--spaceBlue);
+
+    .Svg {
+      svg {
+        fill: var(--spaceBlue);
+        circle {
+          fill: var(--spaceBlue);
+        }
+      }
+    }
+  }
+}
+
+.Svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  svg {
+    fill: #fff;
+    opacity: 1;
+    transition: fill 0.2s linear;
+  }
+}
+
+.ActiveLink {
+  position: relative;
+
+  .Link {
+    border-color: var(--spaceBlue);
+    background: #233039;
+    color: var(--spaceBlue);
+
+    .Svg {
+      svg {
+        fill: var(--spaceBlue);
+        circle {
+          fill: var(--spaceBlue);
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 1304px) {
+  .Link {
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .List {
+    &:before {
+      width: 100%;
+    }
+  }
+}

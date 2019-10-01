@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>ETH icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04.1.-convert" transform="translate(-420.000000, -267.000000)">
+            <g id="Convert" transform="translate(80.000000, 60.000000)">
+                <g transform="translate(300.000000, 68.000000)" id="Convert-from/to">
+                    <g transform="translate(20.000000, 30.000000)">
+                        <g id="Convert-input-n.2" transform="translate(0.000000, 88.000000)">
+                            <g id="Currency-select-n.2">
+                                <g id="ETH-icon" transform="translate(20.000000, 21.000000)">
+                                    <rect id="Rectangle-5" fill="#77D3BE" x="0" y="0" width="21" height="21" rx="10.5"></rect>
+                                    <g id="icon_eth" transform="translate(6.300000, 3.500000)" fill="#FFFFFF" fill-rule="nonzero">
+                                        <polygon id="Shape" points="4.19872359 0 4.10701266 0.318944844 4.10701266 9.57398561 4.19872359 9.66765468 8.39747672 7.1282494"></polygon>
+                                        <polygon id="Shape" points="4.19875312 0 0 7.1282494 4.19875312 9.66768825 4.19875312 5.17556835"></polygon>
+                                        <polygon id="Shape" points="4.19872359 10.4810849 4.14704391 10.5455453 4.14704391 13.8423942 4.19872359 13.9968643 8.39997047 7.9429554"></polygon>
+                                        <polygon id="Shape" points="4.19875312 13.9968173 4.19875312 10.4810379 0 7.94290839"></polygon>
+                                        <polygon id="Shape" points="4.19872359 9.6676446 8.39741109 7.1282729 4.19872359 5.17559185"></polygon>
+                                        <polygon id="Shape" points="2.953125e-05 7.12827626 4.19871703 9.66764796 4.19871703 5.1755952"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

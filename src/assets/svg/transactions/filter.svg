@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="9px" viewBox="0 0 17 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="02.2.1.-wallet_national" transform="translate(-869.000000, -327.000000)">
+        <g id="Wallet-National" transform="translate(80.000000, 60.000000)">
+            <g id="Transactions" transform="translate(300.000000, 193.000000)">
+                <g id="Filter" transform="translate(415.000000, 58.000000)">
+                    <g id="filter_icon" transform="translate(74.000000, 15.000000)">
+                        <path d="M1,1.5 L16,1.5" id="Line-3"></path>
+                        <path d="M4,5.5 L13,5.5" id="Line-3-Copy"></path>
+                        <path d="M7,9.5 L10,9.5" id="Line-3-Copy-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

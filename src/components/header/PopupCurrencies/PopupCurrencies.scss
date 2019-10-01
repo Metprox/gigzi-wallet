@@ -1,0 +1,69 @@
+.PopupCurrencies {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 40px 0;
+  width: 500px;
+  background-color: #ffffff;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24);
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+}
+
+.Title {
+  h1 {
+    margin-bottom: 24px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  margin-bottom: 30px;
+}
+
+.TitleFlag {
+  margin-bottom: 17px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid var(--smokyWhite);
+  p {
+  color: var(--black);
+  font-size: var(--fz15);
+  font-weight: 500;
+  line-height: var(--lh19);
+  }
+}
+
+.Btn {
+  margin: 0 auto;
+  max-width: 340px;
+  width: 100%;
+}
+
+.PopularFlags {
+  margin-bottom: 10px;
+}
+
+.AllFlags {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1304px) {
+  .PopupCurrencies {
+    z-index: 4000;
+  }
+}
+
+@media (max-width: 565px) {
+  .PopupCurrencies {
+    max-width: 100vw;
+    position: fixed;
+    top: inherit;
+    bottom: 0;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 340px) {
+  .Btn {
+    padding: 0 17px;
+  }
+}

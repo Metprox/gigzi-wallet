@@ -1,0 +1,26 @@
+.Verified {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 20px;
+
+  a {
+    display: block;
+    padding: 13px 0;
+    color: var(--spaceBlue);
+    font-size: var(--fz13);
+    line-height: var(--lh16);
+    border: 1px solid var(--spaceBlue);
+    transition: color 0.2s linear, background 0.2s linear;
+
+    &:hover {
+      color: white;
+      background: var(--blue);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Verified {
+    padding: 0 17px 0px;
+  }
+}

@@ -1,0 +1,197 @@
+.DebitOrderCardItem {
+  cursor: pointer;
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+
+.Card {
+  margin-bottom: 9px;
+  padding: 20px 20px 17px;
+  height: 132px;
+  width: 278px;
+  background-color: #f6f7f8;
+
+  svg {
+    height: 18px;
+    width: 53px;
+  }
+}
+
+.gigzi {
+  fill: #000;
+}
+
+.visa {
+  fill: #192071;
+}
+
+.check {
+  margin-right: 10px;
+  width: 13px;
+  height: 9px;
+  stroke: var(--spaceBlue);
+}
+
+.Name {
+  width: 50%;
+  text-align: right;
+
+  p {
+    &:first-of-type {
+      color: var(--black);
+      font-size: var(--fz15);
+      font-weight: 500;
+      line-height: var(--lh19);
+      text-transform: uppercase;
+    }
+    &:last-of-type {
+      color: var(--black35);
+      font-size: var(--fz13);
+      font-weight: 500;
+      line-height: var(--lh16);
+    }
+  }
+}
+
+.Icon {
+  width: 50%;
+}
+
+.Link {
+  color: var(--black);
+  font-size: var(--fz15);
+  font-weight: 500;
+  line-height: var(--lh19);
+  text-decoration: underline;
+}
+
+.Flex {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.ListChecks {
+  padding: 0 20px;
+  li {
+    padding: 20px 0;
+    border-bottom: 1px solid #f6f7f8;
+  }
+}
+
+.cardItemName {
+  color: var(--black);
+  font-size: var(--fz15);
+  font-weight: 500;
+  line-height: var(--lh19);
+}
+
+.CardActive {
+  .Card {
+    background-color: var(--spaceGray);
+  }
+  .Name {
+    p {
+      &:first-of-type {
+        color: #fff;
+      }
+      &:last-of-type {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  svg {
+    fill: #fff;
+  }
+  .Link {
+    color: #fff;
+  }
+}
+
+.CheckNotActive {
+  .check {
+    stroke: var(--black25);
+  }
+}
+
+@media (max-width: 1000px) {
+  .DebitOrderCardItem {
+    flex: 1;
+    &:not(:last-of-type) {
+      margin-right: 11px;
+    }
+  }
+  .Card {
+    width: 100%;
+  }
+
+  .cardItemName {
+    font-size: 11px;
+    line-height: var(--lh13);
+  }
+  .ListChecks {
+    padding: 0 0 0 20px;
+  }
+
+  .Name {
+    p {
+      &:first-of-type {
+        font-size: var(--fz13);
+        line-height: var(--lh16);
+      }
+      &:last-of-type {
+        font-size: var(--fz10);
+        line-height: var(--lh13);
+      }
+    }
+  }
+
+  .Card {
+    svg {
+      width: 42px;
+      height: 15px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .DebitOrderCardItem {
+    width: 60%;
+    &:not(:last-of-type) {
+      margin-right: 0;
+    }
+  }
+
+  .ListChecks {
+    padding: 19px;
+    padding-top: 0;
+  }
+
+  .Card {
+    margin: 0;
+    svg {
+      height: 18px;
+      width: 53px;
+    }
+  }
+
+  .cardItemName {
+    font-size: var(--fz13);
+    line-height: var(--lh16);
+  }
+
+  .Link {
+    font-size: var(--fz13);
+    line-height: var(--lh16);
+  }
+}
+
+@media (max-width: 565px) {
+  .DebitOrderCardItem {
+    width: 100%;
+  }
+}

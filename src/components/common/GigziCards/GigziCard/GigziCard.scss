@@ -1,0 +1,248 @@
+.GigziCard {
+  min-width: 220px;
+  padding: 15px 21px;
+  width: 220px;
+  height: 105px;
+  margin-right: 20px;
+  background: #ffffff;
+  // box-shadow: 0 0 8px 0 #e0eaf0;
+  transition: background 0.2s linear, box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05),
+      4px 4px 9px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+
+  // &:focus {
+  //   background: #202a31;
+  //   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05),
+  //     4px 4px 9px 0 rgba(0, 0, 0, 0.12);
+
+  //   .Name {
+  //     color: #fff;
+  //   }
+  //   .Stone {
+  //     color: #ffffff;
+  //   }
+  //   .Usd {
+  //     opacity: 0.35;
+  //     color: #ffffff;
+  //   }
+  //   .gzb,
+  //   .gzs,
+  //   .gzp {
+  //     path {
+  //       &:nth-child(2) {
+  //         fill: #fff;
+  //       }
+  //       &:last-child {
+  //         fill: #000;
+  //       }
+  //     }
+  //   }
+  //   .gzg {
+  //     path {
+  //       &:nth-child(3) {
+  //         fill: #fff;
+  //       }
+  //       &:last-child {
+  //         fill: #000;
+  //       }
+  //     }
+  //   }
+  //   .euro {
+  //     fill: #fff;
+  //     opacity: 1;
+  //   }
+  //   .eth {
+  //     rect {
+  //       fill: #fff;
+  //     }
+  //     fill: #000;
+  //   }
+  // }
+}
+
+.Flex {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.Icon {
+  flex-basis: 20%;
+  svg {
+    height: 32px;
+    max-width: 100%;
+  }
+}
+
+.Money {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-basis: 80%;
+  p {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: right;
+  }
+}
+
+.Stone {
+  color: #121a1f;
+  font-size: var(--fz15);
+  line-height: var(--lh19);
+}
+.Usd {
+  color: #949699;
+  font-size: var(--fz10);
+  line-height: var(--lh13);
+}
+
+.Name {
+  opacity: 0.6;
+  color: #121a1f;
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  text-transform: uppercase;
+  transition: color, 0.2s linear;
+}
+
+.gzb {
+  path {
+    &:nth-child(2) {
+      fill: #1c242f;
+    }
+    &:last-child {
+      fill: #fff;
+    }
+  }
+}
+.gzg {
+  path {
+    &:nth-child(3) {
+      fill: #ffb400;
+    }
+    &:last-child {
+      fill: #000;
+    }
+  }
+}
+.gzs {
+  path {
+    &:nth-child(2) {
+      fill: #c0c0c0;
+    }
+    &:last-child {
+      fill: #000;
+    }
+  }
+}
+.gzp {
+  path {
+    &:nth-child(2) {
+      fill: #ffcb7a;
+    }
+    &:last-child {
+      fill: #000;
+    }
+  }
+}
+
+.eth {
+  rect {
+    fill: #77d3be;
+  }
+  fill: #fff;
+}
+
+.dollar {
+  height: 23px;
+  width: 12px;
+}
+
+.euro,
+.dollar {
+  fill: var(--sapphire);
+  opacity: 0.2;
+}
+
+.ActiveCard {
+  background: #202a31;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05), 4px 4px 9px 0 rgba(0, 0, 0, 0.12);
+
+  .Name {
+    color: #fff;
+  }
+  .Stone {
+    color: #ffffff;
+  }
+  .Usd {
+    opacity: 0.35;
+    color: #ffffff;
+  }
+  .gzb,
+  .gzs,
+  .gzp {
+    stop {
+      stop-color: #fff;
+    }
+    path {
+      &:nth-child(2) {
+        fill: #fff;
+      }
+      &:last-child {
+        fill: #000;
+      }
+    }
+  }
+  .gzg {
+    stop {
+      stop-color: #fff;
+    }
+    path {
+      &:nth-child(3) {
+        fill: #fff;
+      }
+      &:last-child {
+        fill: #000;
+      }
+    }
+  }
+  .euro,
+  .dollar {
+    fill: #fff;
+    opacity: 1;
+  }
+  .eth {
+    rect {
+      fill: #fff;
+    }
+    fill: #000;
+  }
+}
+
+@media (max-width: 1304px) {
+  .GigziCard {
+    min-width: 228px;
+    width: 228px;
+    margin-right: 16px;
+  }
+
+  .Usd {
+    font-size: var(--fz13);
+    line-height: var(--lh16);
+  }
+}
+
+@media (max-width: 1000px) {
+  .GigziCard {
+    min-width: 224px;
+    width: 224px;
+  }
+}

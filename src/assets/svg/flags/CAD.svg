@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>CAD FLAG</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1280" height="843"></rect>
+        <filter x="-2.5%" y="-1.9%" width="105.0%" height="107.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="500" height="566"></rect>
+        <filter x="-6.4%" y="-2.8%" width="112.8%" height="111.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08.2.-local_currency_Currencies" transform="translate(-930.000000, -370.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="860"></rect>
+            <g id="Wallet-GIGZI" transform="translate(80.000000, 60.000000)">
+                <g id="Rectangle-19">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#F6F7F8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="QR" transform="translate(860.000000, 193.000000)" fill="#FFFFFF">
+                    <polygon id="Rectangle-30-Copy" points="0 0 380 0 380 567 0 567"></polygon>
+                </g>
+            </g>
+            <g id="PopUp">
+                <rect id="Rectangle-" fill="#000000" opacity="0.560000002" x="0" y="0" width="1440" height="860"></rect>
+                <g id="PopUp-Block" transform="translate(470.000000, 147.000000)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="Popular-Currencies" transform="translate(0.000000, 172.000000)">
+                        <g id="1st-Line" transform="translate(20.000000, 49.000000)">
+                            <g id="CAD" transform="translate(402.000000, 0.000000)">
+                                <g id="CAD-FLAG" transform="translate(38.000000, 2.000000)">
+                                    <polygon id="Fill-1" fill="#E81E26" points="0 12 4.705 12 4.705 0 0 0"></polygon>
+                                    <polygon id="Fill-2" fill="#E81E26" points="15.295 12 20 12 20 0 15.295 0"></polygon>
+                                    <polygon id="Fill-3" fill="#FEFEFE" points="4.705 12 15.294 12 15.294 0 4.705 0"></polygon>
+                                    <path d="M10.0001,1.5556 L9.3061,2.9426 C9.2281,3.0926 9.0861,3.0766 8.9451,2.9936 L8.4421,2.7146 L8.8161,4.8456 C8.8961,5.2356 8.6431,5.2356 8.5191,5.0666 L7.6421,4.0156 L7.4991,4.5486 C7.4831,4.6186 7.4111,4.6926 7.3031,4.6746 L6.1941,4.4236 L6.4851,5.5586 C6.5491,5.8116 6.5971,5.9156 6.4231,5.9826 L6.0271,6.1816 L7.9371,7.8426 C8.0111,7.9066 8.0511,8.0176 8.0221,8.1196 L7.8551,8.7076 C8.5121,8.6266 9.1031,8.5526 9.7571,8.4716 C9.8151,8.4716 9.9131,8.5246 9.9131,8.5966 L9.8251,10.7476 L10.1461,10.7476 L10.0941,8.6016 C10.0941,8.5316 10.1831,8.4716 10.2391,8.4716 C10.8971,8.5526 11.4861,8.6266 12.1441,8.7076 L11.9751,8.1196 C11.9491,8.0176 11.9881,7.9066 12.0631,7.8426 L13.9711,6.1816 L13.5751,5.9826 C13.4011,5.9156 13.4501,5.8116 13.5131,5.5586 L13.8041,4.4236 L12.6951,4.6746 C12.5871,4.6926 12.5151,4.6186 12.4991,4.5486 L12.3561,4.0156 L11.4791,5.0666 C11.3551,5.2356 11.1031,5.2356 11.1821,4.8456 L11.5561,2.7146 L11.0551,2.9936 C10.9121,3.0766 10.7711,3.0926 10.6931,2.9426 L10.0001,1.5556 Z" id="Fill-4" fill="#E81E26"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

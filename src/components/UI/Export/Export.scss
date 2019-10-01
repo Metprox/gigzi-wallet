@@ -1,0 +1,30 @@
+.Export {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  span {
+    padding-left: 6px;
+    color: var(--black35);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    transition: color 0.2s ease-in-out;
+  }
+
+  svg {
+    fill: #a6a6a6;
+    transition: fill 0.2s ease-in-out;
+  }
+
+  &:hover {
+    span {
+      color: var(--spaceBlue);
+    }
+    svg {
+      fill: var(--spaceBlue);
+    }
+  }
+}

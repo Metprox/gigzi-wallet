@@ -1,0 +1,60 @@
+.PopupLink {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px 0 36px 0;
+  max-width: 450px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24);
+  transform: translate(-50%, -50%);
+  z-index: 4000;
+
+  h2 {
+    margin-bottom: 45px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.CardNumber {
+  margin-bottom: 20px;
+}
+
+.linkOrder {
+  margin-bottom: 50px;
+  p {
+    color: var(--black65);
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh13);
+    a {
+      color: var(--black);
+    }
+  }
+}
+
+.Close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.btn {
+  width: 340px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .PopupLink {
+    max-width: 375px;
+    top: inherit;
+    bottom: -60px;
+    transform: translate(-50%, 0);
+  }
+
+  .CardNumber {
+    margin-bottom: 10px;
+  }
+}

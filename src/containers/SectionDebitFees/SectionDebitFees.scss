@@ -1,0 +1,74 @@
+.SectionDebitFees {
+  height: 100%;
+}
+
+.Backstep {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 13px;
+  cursor: pointer;
+
+  h3 {
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh26);
+    text-transform: uppercase;
+    transition: color 0.1s ease;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    border-bottom: 1px solid var(--black65);
+    border-left: 1px solid var(--black65);
+    transform: translateY(-57%) rotate(45deg);
+    transition: border-color 0.1s ease;
+  }
+
+  &:hover {
+    h3 {
+      color: var(--black);
+    }
+    &:before {
+      border-color: var(--black);
+    }
+  }
+}
+
+.Title {
+  padding: 20px 0 21px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f6f6f6;
+  h6 {
+    text-transform: uppercase;
+  }
+}
+
+.Description {
+  padding: 11px 0 10px;
+  background-color: rgba(248, 250, 252, 0.6);
+  border-bottom: 1px solid var(--smokyWhite);
+  text-transform: uppercase;
+  p {
+    color: var(--black);
+    font-size: var(--fz10);
+    line-height: var(--lh13);
+    font-weight: 500;
+  }
+}
+
+.BackgroundSection {
+  background: #fff;
+  height: calc(100% - 40px);
+}
+
+@media (max-width: 767px) {
+  .wrapBackstep {
+    padding: 0 17px;
+  }
+}

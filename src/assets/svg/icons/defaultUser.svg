@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Pic n.1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="14" cy="14" r="14"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="07.1.0.-contacts" transform="translate(-780.000000, -314.000000)">
+            <g id="Contacts" transform="translate(80.000000, 60.000000)">
+                <g id="Francis" transform="translate(300.000000, 254.000000)">
+                    <g id="Pic-n.1" transform="translate(400.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#3F732D" xlink:href="#path-1"></use>
+                        <rect id="Rectangle-12" fill="#21571A" mask="url(#mask-2)" x="5.25" y="3.5" width="17.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy" fill="#7B3975" mask="url(#mask-2)" x="22.75" y="7" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-11" fill="#7B3975" mask="url(#mask-2)" x="17.5" y="21" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-2" fill="#7B3975" mask="url(#mask-2)" x="1.75" y="7" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-12" fill="#7B3975" mask="url(#mask-2)" x="7" y="21" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-6" fill="#21571A" mask="url(#mask-2)" x="1.75" y="10.5" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-9" fill="#21571A" mask="url(#mask-2)" x="7" y="17.5" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-13" fill="#21571A" mask="url(#mask-2)" x="3.5" y="21" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-15" fill="#21571A" mask="url(#mask-2)" x="21" y="21" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-16" fill="#21571A" mask="url(#mask-2)" x="24.5" y="17.5" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-14" fill="#21571A" mask="url(#mask-2)" x="0" y="17.5" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-10" fill="#21571A" mask="url(#mask-2)" x="17.5" y="17.5" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-7" fill="#21571A" mask="url(#mask-2)" x="22.75" y="10.5" width="3.5" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-3" fill="#7B3975" mask="url(#mask-2)" x="10.5" y="7" width="7" height="7"></rect>
+                        <rect id="Rectangle-14-Copy-8" fill="#21571A" mask="url(#mask-2)" x="10.5" y="14" width="7" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-17" fill="#21571A" mask="url(#mask-2)" x="10.5" y="24.5" width="7" height="3.5"></rect>
+                        <rect id="Rectangle-14-Copy-4" fill="#7B3975" mask="url(#mask-2)" x="7" y="10.5" width="3.5" height="7"></rect>
+                        <rect id="Rectangle-14-Copy-5" fill="#7B3975" mask="url(#mask-2)" x="17.5" y="10.5" width="3.5" height="7"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

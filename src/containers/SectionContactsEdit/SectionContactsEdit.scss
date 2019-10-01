@@ -1,0 +1,123 @@
+.SectionContactsEdit {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.Header {
+  padding: 17px 0 18px;
+  border-bottom: 1px solid var(--smokyWhite);
+  text-transform: uppercase;
+  background-color: #ffffff;
+
+  h2 {
+    color: var(--black85);
+    font-size: var(--fz18);
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: var(--lh28);
+  }
+}
+
+.Btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Edit,
+.Delete {
+  cursor: pointer;
+  p {
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}
+.Edit {
+  margin-right: 40px;
+  color: var(--spaceBlue);
+}
+.Delete {
+  color: #f44e79;
+
+  p {
+    padding-right: 5px;
+  }
+}
+
+.Descriptions {
+  padding: 38px 0 44px 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.Address {
+  max-width: 315px;
+  width: 100%;
+}
+
+.Notes {
+  max-width: 430px;
+  width: 100%;
+}
+
+.Label,
+.Text {
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+.Label {
+  margin-bottom: 12px;
+  color: var(--black65);
+}
+.Text {
+  color: #121a1f;
+}
+
+.flexDescription {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.wrapBackstep {
+  padding-left: 2px;
+}
+
+@media (max-width: 1000px) {
+  .Notes {
+    max-width: 264px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapBackstep {
+    padding-left: 17px;
+  }
+
+  .Edit {
+    margin-right: 30px;
+  }
+
+  .flexDescription {
+    flex-flow: column wrap;
+  }
+
+  .Address {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .Notes {
+    max-width: 100%;
+  }
+}

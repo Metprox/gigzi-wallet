@@ -1,0 +1,40 @@
+.Ethereum {
+}
+
+.Transactions {
+  width: 100%;
+  max-width: 540px;
+}
+
+.Flex {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (max-width: 1304px) {
+  .Transactions {
+    max-width: 553px;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Transactions {
+    max-width: 100%;
+    margin: 0;
+  }
+  .Flex {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .Ethereum {
+    h1 {
+      padding: 0 17px;
+    }
+  }
+}

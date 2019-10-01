@@ -1,0 +1,26 @@
+.Redeem {
+
+}
+
+.Flex {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .Flex {
+    flex-flow: column wrap;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .Redeem {
+    h1 {
+      padding-left: 17px;
+      // color: red;
+    }
+  }
+}

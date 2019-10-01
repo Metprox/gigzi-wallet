@@ -1,0 +1,53 @@
+.DebitOrderCard {
+  padding: 35px 0 20px;
+  background-color: #fff;
+}
+
+.List {
+  margin-bottom: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.BtnWrap {
+  width: 220px;
+  margin-left: auto;
+}
+
+
+@media (max-width: 1304px) {
+  .DebitOrderCard {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .DebitOrderCard {
+    padding-top: 20px;
+  }
+  .List {
+    flex-flow: column wrap;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+
+  .BtnWrap {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
+@media (max-width: 565px) {
+  .DebitOrderCard {
+    padding-top: 20px;
+  }
+  .List {
+    flex-flow: column wrap;
+    margin-bottom: 40px;
+  }
+
+  .BtnWrap {
+    width: 100%;
+  }
+}

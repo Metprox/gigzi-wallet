@@ -1,0 +1,95 @@
+.FundingEditAccount {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 69px;
+  border-bottom: 2px solid var(--smokyWhite);
+  h6 {
+    text-transform: uppercase;
+  }
+}
+.Body {
+  background: #fff;
+}
+
+.Btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 47px;
+}
+
+.Cancel {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.Save {
+  width: 200px;
+}
+
+.Delete {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  cursor: pointer;
+
+  p {
+    color: #f44e79;
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.Cancel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+  border: 1px solid #36aaf8;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+
+  span {
+    color: #36aaf8;
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in;
+  }
+  &:hover {
+    background: #36aaf8;
+    span {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .backstep {
+    padding-left: 17px;
+  }
+
+  .Btns {
+    padding: 0 17px;
+  }
+
+  .Cancel {
+    margin-right: 15px;
+  }
+}

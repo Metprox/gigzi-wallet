@@ -1,0 +1,42 @@
+.TitleContacts {
+  display: flex;
+  align-items: center;
+  padding: 13px 20px 13px;
+  background-color: #fff;
+  p {
+    display: inline-block;
+    color: var(--black65);
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh13);
+
+    &:first-of-type {
+      flex: 0.8;
+    }
+    &:last-of-type {
+      flex: 1;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .TitleContacts {
+    p {
+      &:first-of-type {
+        flex: 0 0 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .TitleContacts {
+    padding-left: 17px;
+    padding-right: 17px;
+    p {
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+}

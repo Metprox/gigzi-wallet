@@ -1,0 +1,60 @@
+.PopupEditorContact {
+  width: 140px;
+  border: 1px solid #f3f3f3;
+  background: #ffffff;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.08);
+}
+
+.List {
+  li {
+    cursor: pointer;
+
+    &:not(:last-of-type) {
+      border-bottom: 2px solid var(--smokyWhite);
+    }
+
+    &:last-of-type {
+      p {
+        color: #db5477;
+      }
+    }
+
+    p {
+      padding: 12px 0 13px 15px;
+      color: var(--black);
+      font-size: var(--fz13);
+      font-weight: 500;
+      line-height: var(--lh16);
+      transition: color 0.2s ease-in-out;
+    }
+
+    &:hover {
+      p {
+        color: var(--spaceBlue);
+      }
+    }
+  }
+}
+
+.copy {
+  text-transform: inherit !important;
+}
+
+.edit {
+  text-transform: inherit !important;
+}
+
+.delete {
+}
+
+@media (max-width: 767px) {
+  .List {
+    li {
+      &:last-of-type {
+        p {
+          color: #db5477 !important;
+        }
+      }
+    }
+  }
+}

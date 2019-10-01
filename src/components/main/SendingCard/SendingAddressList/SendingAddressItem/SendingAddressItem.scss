@@ -1,0 +1,22 @@
+.SendingAddressItem {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 100%;
+  min-height: 54px;
+  padding-left: 15px;
+  color: var(--textBlack);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  transition: background, color 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: #202a31;
+    color: #fff;
+  }
+  svg {
+    margin-right: 15px;
+  }
+}

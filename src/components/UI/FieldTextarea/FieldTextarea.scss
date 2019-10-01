@@ -1,0 +1,36 @@
+.FieldTextarea {
+  p {
+    margin-bottom: 8px;
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+
+  textarea {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    padding: 10px 15px;
+    height: 80px;
+    max-width: 410px;
+    width: 100%;
+    background-color: var(--lightBlueGray45);
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    resize: none;
+    &::placeholder {
+      color: var(--black35);
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .FieldTextarea {
+    textarea {
+      max-width: 100%;
+    }
+  }
+}

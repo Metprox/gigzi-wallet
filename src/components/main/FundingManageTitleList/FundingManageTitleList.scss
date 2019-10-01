@@ -1,0 +1,63 @@
+.FundingManageTitleList {
+  padding: 12px 20px 15px;
+  display: flex;
+  span {
+    display: inline-block;
+    color: var(--black65);
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh13);
+
+    &:first-of-type {
+      flex: 2;
+    }
+    &:nth-of-type(2) {
+      flex: 1;
+    }
+    &:last-of-type {
+      flex: 1;
+    }
+  }
+}
+
+@media (max-width: 1304px) {
+  .FundingManageTitleList {
+    span {
+      &:first-of-type {
+        flex: 0 0 380px;
+      }
+      &:nth-of-type(2) {
+        flex: 0 0 240px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .FundingManageTitleList {
+    span {
+      &:first-of-type {
+        flex: 0 1 220px;
+      }
+      &:nth-of-type(2) {
+        flex: 0 1 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .FundingManageTitleList {
+    span {
+      &:first-of-type {
+        flex: 0 1 177px;
+      }
+      &:nth-of-type(2) {
+        display: none;
+      }
+      &:nth-of-type(2) {
+        flex: 0 1 180px;
+      }
+    }
+  }
+}

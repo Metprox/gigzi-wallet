@@ -1,0 +1,24 @@
+.Description {
+  margin-bottom: 60px;
+  color: var(--black65);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+
+.Btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+}
+
+@media (max-width: 565px) {
+  .Btns {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .cancel {
+    margin-right: 20px;
+  }
+}

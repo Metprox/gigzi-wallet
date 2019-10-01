@@ -1,0 +1,112 @@
+.Charts {
+  position: relative;
+
+  h1 {
+    margin: 0;
+  }
+}
+.Header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CardsSetting {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.SearchWrap {
+  margin-right: 20px;
+  width: 198px;
+}
+
+
+
+@media (max-width: 767px) {
+  .wrapPagination {
+    display: none;
+  }
+
+  .SearchWrap {
+    margin-right: 0;
+    width: 164px;
+  }
+
+  .Header {
+    padding: 0 17px;
+  }
+}
+
+
+.Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+.Left {
+  position: relative;
+  height: 42px;
+  width: 41px;
+  cursor: pointer;
+  transition: background 0.1s ease-in;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 16px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid var(--black85);
+    border-left: 1px solid var(--black85);
+    transform: translateY(-50%) rotate(45deg);
+    transition: border-color 0.1s ease-in;
+  }
+  &:hover {
+    background: var(--black);
+    &:before {
+      border-color: #fafafa;
+    }
+  }
+}
+.Right {
+  position: relative;
+  height: 42px;
+  width: 41px;
+  cursor: pointer;
+  transition: background 0.1s ease-in;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 16px;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid var(--black85);
+    border-bottom: 1px solid var(--black85);
+    transform: translateY(-50%) rotate(-45deg);
+    transition: border-color 0.1s ease-in;
+  }
+  &:hover {
+    background: var(--black);
+    &:before {
+      border-color: #fafafa;
+    }
+  }
+}
+
+.Disabled {
+  opacity: 0.3;
+  cursor: default;
+  &:hover {
+    background: transparent;
+    &:before {
+      border-color: var(--black85);
+    }
+  }
+}

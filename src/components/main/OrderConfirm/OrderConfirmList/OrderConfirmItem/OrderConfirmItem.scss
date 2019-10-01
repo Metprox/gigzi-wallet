@@ -1,0 +1,40 @@
+.Item {
+  padding: 17px 0;
+  border-bottom: 1px solid #f6f6f6;
+  &:first-of-type{
+    padding-top: 0;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      &:first-of-type {
+        color: var(--black);
+        font-size: var(--fz13);
+        font-weight: 500;
+        line-height: var(--lh16);
+        text-transform: capitalize;
+      }
+      &:last-of-type {
+        color: var(--black);
+        font-size: var(--fz15);
+        font-weight: 500;
+        line-height: var(--lh19);
+        text-transform: uppercase;
+      }
+    }
+  }
+  span {
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+@media (max-width: 1000px) {
+  .Item {
+    padding-bottom: 10px;
+  }
+}

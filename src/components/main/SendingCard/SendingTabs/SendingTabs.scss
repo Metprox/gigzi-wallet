@@ -1,0 +1,21 @@
+.SendingTabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+@media (max-width: 1000px) {
+  .SendingTabs {
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .SendingTabs {
+    margin-bottom: 40px;
+  }
+}
+

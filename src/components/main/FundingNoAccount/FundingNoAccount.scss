@@ -1,0 +1,43 @@
+.FundingNoAccount {
+  padding-top: 36px;
+  h6 {
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+}
+
+.description {
+  margin-bottom: 60px;
+  color: var(--black65);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh19);
+}
+
+.Container {
+  padding: 0 20px;
+}
+
+.addBtn {
+  display: block;
+  max-width: 300px;
+  // margin-bottom: 391px;
+  margin-bottom: calc(100vh - 470px);
+}
+
+@media (max-width: 1000px) {
+  .addBtn {
+    margin-bottom: calc(100vh - 50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .description {
+    margin-bottom: 243px;
+  }
+
+  .addBtn {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}

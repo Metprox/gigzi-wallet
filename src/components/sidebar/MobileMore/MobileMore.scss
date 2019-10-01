@@ -1,0 +1,20 @@
+.MobileMore {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  a,
+  p {
+    display: block;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 20px 0 20px 26px;
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+}

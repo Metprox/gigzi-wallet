@@ -1,0 +1,15 @@
+.EndItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 18px;
+  border-top: 2px solid var(--smokyhite);
+  p {
+    color: var(--black65);
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh13);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

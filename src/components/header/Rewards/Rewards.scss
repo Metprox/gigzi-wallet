@@ -1,0 +1,47 @@
+.Rewards {
+  display: flex;
+  align-items: center;
+  font-size: var(--fz10);
+
+  svg {
+    width: auto;
+  }
+}
+
+.Reward {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: #fff;
+  padding: 4.5px 10px;
+  margin-right: 12px;
+
+  svg {
+    padding: 0 5px 0 10px;
+  }
+
+  p {
+    color: #000000;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+}
+
+.Remaining {
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  svg {
+    padding-right: 5px;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: center;
+  }
+}

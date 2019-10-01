@@ -1,0 +1,29 @@
+.PopupWalletItem {
+  padding: 18px 0 20px 15px;
+  transition: background 0.1s ease-in-out;
+  cursor: pointer;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid var(--smokyWhite);
+  }
+  p {
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    transition: color 0.1s ease-in-out;
+    span {
+      color: var(--black65);
+      transition: color 0.1s ease-in-out;
+    }
+  }
+  &:hover {
+    background: #202a31;
+    p {
+      color: rgb(255, 255, 255);
+
+      span {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+}

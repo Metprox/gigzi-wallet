@@ -1,0 +1,21 @@
+.Verification {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (max-width: 1304px) {
+  .wrapBackstep {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapBackstep {
+    padding-left: 17px;
+  }
+  .Verification {
+    height: auto;
+  }
+}

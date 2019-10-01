@@ -1,0 +1,12 @@
+.ContainerWrap {
+  padding: 0 20px;
+  width: 100%;
+  // height: 100%;
+}
+
+
+@media (max-width: 767px) {
+  .ContainerWrap {
+    padding: 0 17px;
+  }
+}

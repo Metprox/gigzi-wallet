@@ -1,0 +1,100 @@
+.Header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.Link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  svg {
+    display: block;
+    height: auto;
+  }
+}
+
+.Notifications {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1020px;
+  height: 100%;
+  padding-left: 40px;
+}
+
+.Settings {
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  position: relative;
+  display: flex;
+  max-width: 260px;
+  width: 100%;
+  height: 100%;
+
+  svg {
+    fill: #fefefe;
+    width: 87px;
+    height: 22px;
+  }
+}
+
+.wrapBurger {
+  display: none;
+  cursor: pointer;
+}
+
+.mobileRewards {
+  display: none;
+}
+
+.wrapRewards {
+  display: flex;
+}
+
+@media (max-width: 1304px) {
+  .Header {
+    position: relative;
+    z-index: 3000;
+  }
+
+  .wrapBurger {
+    display: block;
+  }
+
+  .Logo {
+    width: auto;
+    padding-left: 16px;
+  }
+
+  .Notifications {
+    justify-content: space-between;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    z-index: 3500;
+  }
+  .wrapRewards {
+    display: none;
+  }
+
+  .mobileRewards {
+    display: none;
+  }
+
+  .Notifications {
+    justify-content: flex-end;
+  }
+}

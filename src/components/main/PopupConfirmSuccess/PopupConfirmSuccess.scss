@@ -1,0 +1,140 @@
+.PopupConfirmSuccess {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 450px;
+  padding: 47px 0 36px 0;
+  background-color: #ffffff;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 2000;
+
+  h2 {
+    margin-bottom: 52px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .SvgWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    svg {
+      width: 42px;
+      height: 42px;
+      rect {
+        fill: #77d3be;
+      }
+      text-align: center;
+      transform: scale(1.15);
+    }
+  }
+}
+
+.Summary {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 43px;
+  p {
+    position: relative;
+    color: var(--black);
+    font-size: var(--fz42);
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: var(--lh37);
+    text-align: center;
+  }
+  span {
+    position: absolute;
+    bottom: 0;
+    right: -45px;
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-align: center;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+  }
+}
+
+.Hash {
+  margin-bottom: 40px;
+  padding: 19px 0 21px 0;
+  border-top: 1px solid var(--smokyWhite);
+  border-bottom: 1px solid var(--smokyWhite);
+  p {
+    display: inline-block;
+    word-wrap: break-word;
+    vertical-align: top;
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    &:first-of-type {
+      width: 20%;
+      color: var(--black35);
+    }
+    &:last-of-type {
+      width: 80%;
+      color: var(--black);
+      text-align: right;
+    }
+  }
+}
+
+.Link {
+  padding-top: 10px;
+  display: block;
+  width: 100%;
+  color: var(--spaceBlue85);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.BtnWrap {
+  margin: 0 35px;
+}
+
+@media (max-width: 1304px) {
+  .Hash {
+    margin-bottom: 58px;
+  }
+  .PopupConfirmSuccess {
+    z-index: 4000;
+  }
+}
+
+@media (max-width: 565px) {
+  .PopupConfirmSuccess {
+    position: fixed;
+    padding-top: 40px;
+    top: inherit;
+    bottom: 0;
+    max-width: 100%;
+    transform: translate(-50%, 0);
+  }
+
+  .Hash {
+    p {
+      &:last-of-type {
+        padding-left: 30%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .Link {
+    padding-top: 0;
+    padding-left: 45%;
+  }
+}

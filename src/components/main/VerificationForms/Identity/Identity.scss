@@ -1,0 +1,225 @@
+.Identity {
+}
+
+.Title {
+  border-top: 1px solid var(--smokyWhite);
+  background-color: rgba(#f8fafc, 0.6);
+  margin-bottom: 30px;
+  padding: 8px 0 10px;
+
+  h3 {
+    color: var(--black);
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh13);
+    text-transform: uppercase;
+  }
+}
+
+.Documents {
+  position: relative;
+  padding-bottom: 37px;
+
+  label {
+    width: 100%;
+    max-width: 410px;
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .BlockDoc {
+    position: relative;
+    padding-left: 15px;
+    height: 48px;
+    width: 100%;
+    background-color: rgba(#f0f4f8, 0.45);
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    cursor: pointer;
+  }
+
+  .NameDoc {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+
+  .TextDoc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 119px;
+    background-color: #f0f4f8;
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.DescriptionInput {
+  margin-bottom: 8px;
+  color: var(--black65);
+  font-family: Montserrat;
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+
+.FooterNote {
+  width: 100%;
+  margin: 0px 0 58px;
+  p {
+    padding-top: 13px;
+    border-top: 1px solid #f6f7f8;
+    color: rgba(14, 21, 28, 0.47);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh19);
+    span {
+      color: rgba(14, 21, 28, 1);
+    }
+  }
+}
+
+.Verify {
+  width: 220px;
+  margin-left: auto;
+  margin-bottom: 153px;
+}
+
+.NameDoc.ActiveName {
+  color: var(--black);
+}
+
+.wrapBottomBlock {
+  padding: 0 20px;
+}
+
+.flexDocument {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offsetRight {
+  width: 100%;
+  max-width: 410px;
+}
+
+.wrapFieldSelected {
+  max-width: 410px;
+}
+
+@media (max-width: 1304px) {
+  .Identity {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapBottomBlock {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .Verify {
+    margin-bottom: 0;
+  }
+
+  .wrapFieldSelected {
+    max-width: 410px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapFieldSelected {
+    max-width: 50%;
+  }
+  .Documents {
+    label {
+      max-width: 324px;
+    }
+  }
+
+  .offsetRight {
+    width: 100%;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .offsetRight {
+    min-width: 50%;
+  }
+
+  .flexDocument {
+    label {
+      &:last-of-type {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .wrapFieldSelected {
+    max-width: 100%;
+  }
+
+  .flexDocument {
+    flex-flow: column wrap;
+  }
+
+  .offsetRight {
+    max-width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .Documents {
+    padding-bottom: 30px;
+
+    label {
+      max-width: 100%;
+    }
+  }
+
+  .flexDocument {
+    label {
+      &:last-of-type {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .FooterNote {
+    margin: 0 0 40px 0;
+  }
+
+  .Verify {
+    width: 100%;
+  }
+}

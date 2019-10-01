@@ -1,0 +1,21 @@
+.Copied {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  width: 52px;
+  background-color: #fbfbfb;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  transition: all 0.1s linear;
+  p {
+    color: var(--black);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 13px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

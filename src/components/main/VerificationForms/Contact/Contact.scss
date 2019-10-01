@@ -1,0 +1,141 @@
+.Contact {
+}
+
+.Title {
+  border-top: 2px solid var(--smokyWhite);
+  background-color: rgba(#f8fafc, 0.6);
+  margin-bottom: 30px;
+  padding: 8px 0 10px;
+
+  h3 {
+    color: var(--black);
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh13);
+    text-transform: uppercase;
+  }
+}
+
+.Countryes,
+.Addresses,
+.Calls {
+  position: relative;
+  margin-bottom: 30px;
+}
+.Calls {
+  margin-bottom: 44px;
+}
+
+.countryNumbers {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  padding-left: 15px;
+  vertical-align: bottom;
+  height: 48px;
+  width: 110px;
+  min-width: 110px;
+  background-color: rgba(#f0f4f8, 0.45);
+  p {
+    width: 100%;
+    color: var(--black);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+    text-align: left;
+  }
+  cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    height: 6px;
+    width: 6px;
+    border-bottom: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+    transform: translateY(-50%) rotate(45deg);
+  }
+}
+
+.DescriptionInput {
+  margin-bottom: 8px;
+  color: var(--black65);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+
+.btnWrap {
+  padding: 0 20px;
+}
+
+.Next {
+  width: 220px;
+  margin-left: auto;
+  margin-bottom: 153px;
+}
+
+.flexInputs {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offsetRight {
+  width: 100%;
+  max-width: 410px;
+}
+
+@media (max-width: 1304px) {
+  .Contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Next {
+    margin-bottom: 0;
+  }
+
+  .btnWrap {
+    flex: 1;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 1000px) {
+  .flexInputs {
+    flex-flow: row nowrap;
+  }
+
+  .offsetRight {
+    width: 100%;
+    margin-right: 16px;
+  }
+
+  .btnWrap {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}
+
+@media (max-width: 565px) {
+  .Next {
+    width: 100%;
+  }
+  .flexInputs {
+    flex-flow: column wrap;
+  }
+  .offsetRight {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}

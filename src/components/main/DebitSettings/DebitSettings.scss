@@ -1,0 +1,53 @@
+.DebitSettings {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 41px;
+}
+
+.List {
+  max-width: 441px;
+  width: 100%;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0 20px;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid var(--smokyWhite);
+    }
+    span {
+      font-size: var(--fz13);
+      font-weight: 500;
+      line-height: var(--lh16);
+      &:first-of-type {
+        color: var(--black65);
+      }
+      &:last-of-type {
+        color: var(--spaceBlue);
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .DebitSettings {
+    padding-right: 0;
+  }
+  .List {
+    max-width: 324px;
+  }
+}
+
+@media (max-width: 767px) {
+  .DebitSettings {
+    flex-flow: column wrap;
+  }
+
+  .List {
+    order: 1;
+    max-width: 100%;
+  }
+}

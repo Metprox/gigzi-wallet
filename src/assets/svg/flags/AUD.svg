@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1280" height="843"></rect>
+        <filter x="-2.5%" y="-1.9%" width="105.0%" height="107.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="500" height="566"></rect>
+        <filter x="-6.4%" y="-2.8%" width="112.8%" height="111.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08.2.-local_currency_Currencies" transform="translate(-930.000000, -569.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="860"></rect>
+            <g id="Wallet-GIGZI" transform="translate(80.000000, 60.000000)">
+                <g id="Rectangle-19">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#F6F7F8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="QR" transform="translate(860.000000, 193.000000)" fill="#FFFFFF">
+                    <polygon id="Rectangle-30-Copy" points="0 0 380 0 380 567 0 567"></polygon>
+                </g>
+            </g>
+            <g id="PopUp">
+                <rect id="Rectangle-" fill="#000000" opacity="0.560000002" x="0" y="0" width="1440" height="860"></rect>
+                <g id="PopUp-Block" transform="translate(470.000000, 147.000000)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="All-Currencies" transform="translate(0.000000, 371.000000)">
+                        <g id="4th-Line" transform="translate(20.000000, 49.000000)">
+                            <g id="Group-14" transform="translate(440.000000, 2.000000)">
+                                <g id="Group" transform="translate(-0.000500, 0.000000)">
+                                    <polygon id="Fill-1" fill="#2C2A7B" points="0.0005 11.999 20.0005 11.999 20.0005 -1.02140518e-13 0.0005 -1.02140518e-13"></polygon>
+                                    <polygon id="Fill-2" fill="#FEFEFE" points="5.2603 7.3521 5.5673 8.3271 6.4963 7.9641 5.9473 8.8161 6.8013 9.3371 5.8113 9.4261 5.9473 10.4381 5.2603 9.6981 4.5783 10.4381 4.7143 9.4261 3.7223 9.3371 4.5783 8.8161 4.0273 7.9641 4.9583 8.3271"></polygon>
+                                    <polygon id="Fill-3" fill="#FEFEFE" points="15.7827 9.104 15.9297 9.568 16.3727 9.396 16.1117 9.802 16.5177 10.05 16.0447 10.092 16.1117 10.575 15.7827 10.221 15.4597 10.575 15.5237 10.092 15.0537 10.05 15.4597 9.802 15.1987 9.396 15.6407 9.568"></polygon>
+                                    <polygon id="Fill-4" fill="#FEFEFE" points="13.1548 4.8208 13.2998 5.2838 13.7408 5.1108 13.4808 5.5178 13.8858 5.7658 13.4158 5.8068 13.4808 6.2898 13.1548 5.9368 12.8278 6.2898 12.8928 5.8068 12.4218 5.7658 12.8278 5.5178 12.5668 5.1108 13.0088 5.2838"></polygon>
+                                    <polygon id="Fill-5" fill="#FEFEFE" points="15.7827 1.8892 15.9297 2.3532 16.3727 2.1812 16.1117 2.5852 16.5177 2.8342 16.0447 2.8772 16.1117 3.3582 15.7827 3.0062 15.4597 3.3582 15.5237 2.8772 15.0537 2.8342 15.4597 2.5852 15.1987 2.1812 15.6407 2.3532"></polygon>
+                                    <polygon id="Fill-6" fill="#FEFEFE" points="18.1245 4.0991 18.2675 4.5631 18.7135 4.3901 18.4485 4.7961 18.8575 5.0431 18.3845 5.0861 18.4515 5.5691 18.1245 5.2151 17.7985 5.5691 17.8635 5.0861 17.3915 5.0431 17.7985 4.7961 17.5375 4.3901 17.9795 4.5631"></polygon>
+                                    <polygon id="Fill-7" fill="#FEFEFE" points="16.7234 6.5595 16.4204 6.5825 16.6524 6.7825 16.5804 7.0865 16.8374 6.9205 17.0944 7.0865 17.0234 6.7825 17.2534 6.5825 16.9534 6.5595 16.8374 6.2695"></polygon>
+                                    <polygon id="Fill-8" fill="#FEFEFE" points="4.3853 0.0003 4.3853 1.8043 0.000300000001 1.8043 0.000300000001 3.6083 4.3853 3.6083 4.3853 5.4133 6.1373 5.4133 6.1373 3.6083 10.5263 3.6083 10.5263 1.8043 6.1373 1.8043 6.1373 0.0003"></polygon>
+                                    <polygon id="Fill-9" fill="#FEFEFE" points="0.000500000001 0.0003 0.000500000001 0.6053 9.3465 5.4133 10.5235 5.4133 10.5235 4.8073 1.1775 0.0003"></polygon>
+                                    <polygon id="Fill-10" fill="#FEFEFE" points="9.347 0.0003 0.001 4.8073 0.001 5.4133 1.178 5.4133 10.523 0.6053 10.523 0.0003"></polygon>
+                                    <polygon id="Fill-11" fill="#E81E26" points="4.7354 0.0003 4.7354 2.1643 0.0004 2.1643 0.0004 3.2473 4.7354 3.2473 4.7354 5.4133 5.7874 5.4133 5.7874 3.2473 10.5234 3.2473 10.5234 2.1643 5.7874 2.1643 5.7874 0.0003"></polygon>
+                                    <path d="M9.7385,0.0003 L6.2325,1.8043 L7.0155,1.8043 L10.5235,0.0003 L9.7385,0.0003 Z M0.000500000001,0.0003 L0.000500000001,0.4033 L2.7225,1.8043 L3.5085,1.8043 L0.000500000001,0.0003 Z" id="Fill-12" fill="#E81E26"></path>
+                                    <path d="M7.016,3.6084 L10.526,5.4134 L10.526,5.0094 L7.801,3.6084 L7.016,3.6084 Z M3.509,3.6084 L8.29558644e-13,5.4134 L0.785,5.4134 L4.293,3.6084 L3.509,3.6084 Z" id="Fill-13" fill="#E81E26"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

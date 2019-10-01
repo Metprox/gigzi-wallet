@@ -1,0 +1,67 @@
+.SendingCard {
+  width: 100%;
+  max-width: 380px;
+  padding: 20px 0;
+  background-color: #ffffff;
+}
+
+.Tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 42px;
+  div {
+    width: 50%;
+    text-align: center;
+    &:hover {
+      button {
+        color: rgba(#212121, 0.85);
+        border-color: var(--spaceBlue);
+      }
+    }
+  }
+  button {
+    display: block;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    color: var(--black25);
+    font-size: var(--fz18);
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: var(--lh28);
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: color, border-color 0.2s ease-in-out;
+  }
+  .activeTab {
+    color: var(--black85);
+    border-color: var(--spaceBlue);
+  }
+}
+
+@media (max-width: 1304px) {
+  .SendingCard {
+    max-width: 391px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .SendingCard {
+    max-width: 100%;
+    order: -1;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .SendingCard {
+    padding-top: 17px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

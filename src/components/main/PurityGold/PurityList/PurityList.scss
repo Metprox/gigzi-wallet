@@ -1,0 +1,46 @@
+.PurityList {
+}
+
+.more {
+  display: none;
+  padding: 18px 0 19px;
+  background-color: #fff;
+  span {
+    position: relative;
+    color: var(--black65);
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh13);
+    text-transform: uppercase;
+    text-align: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      height: 7px;
+      width: 7px;
+      border-right: 1px solid var(--black65);
+      border-bottom: 1px solid var(--black65);
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+}
+
+@media (max-width: 1304px) {
+  .PurityList {
+    overflow: scroll;
+    max-height: 305px;
+  }
+  .more {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .PurityList {
+    max-height: 429px;
+  }
+}

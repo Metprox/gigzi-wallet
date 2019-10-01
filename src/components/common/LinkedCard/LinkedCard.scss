@@ -1,0 +1,39 @@
+.LinkedCard {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 220px;
+  min-width: 220px;
+  padding: 15px 21px;
+  width: 220px;
+  height: 105px;
+  margin-right: 20px;
+  background: #ffffff;
+  // box-shadow: 0 0 8px 0 #e0eaf0;
+  cursor: pointer;
+  transition: background 0.2s linear, box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05),
+      4px 4px 9px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  p {
+    color: #202a31;
+    font-size: var(--fz13);
+    line-height: var(--lh16);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  svg {
+    margin-bottom: 11px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .LinkedCard {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>GBP Flag</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1280" height="843"></rect>
+        <filter x="-2.5%" y="-1.9%" width="105.0%" height="107.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="500" height="566"></rect>
+        <filter x="-6.4%" y="-2.8%" width="112.8%" height="111.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08.2.-local_currency_Currencies" transform="translate(-813.000000, -370.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="860"></rect>
+            <g id="Wallet-GIGZI" transform="translate(80.000000, 60.000000)">
+                <g id="Rectangle-19">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#F6F7F8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="TRANSACTIONS" transform="translate(300.000000, 193.000000)">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="540" height="567"></rect>
+                    <g id="Date" transform="translate(0.000000, 122.000000)" fill="#F8FAFC" opacity="0.6">
+                        <rect id="Rectangle" x="0" y="0" width="540" height="34"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="PopUp">
+                <rect id="Rectangle-" fill="#000000" opacity="0.560000002" x="0" y="0" width="1440" height="860"></rect>
+                <g id="PopUp-Block" transform="translate(470.000000, 147.000000)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="Popular-Currencies" transform="translate(0.000000, 172.000000)">
+                        <g id="1st-Line" transform="translate(20.000000, 49.000000)">
+                            <g id="GBP" transform="translate(285.000000, 0.000000)">
+                                <g id="GBP-Flag" transform="translate(38.000000, 2.000000)">
+                                    <polygon id="Fill-1" fill="#FEFEFE" points="0 12 20 12 20 0 0 0"></polygon>
+                                    <polygon id="Fill-2" fill="#BC1F37" points="19.5435 0.0003 12.0095 4.3383 13.3915 4.3383 19.9995 0.5333 19.9995 0.0003"></polygon>
+                                    <polygon id="Fill-3" fill="#BC1F37" points="13.0797 7.9014 19.9997 11.8844 19.9997 11.0894 14.4617 7.9014"></polygon>
+                                    <polygon id="Fill-4" fill="#BC1F37" points="0 0.9138 5.92 4.3378 7.303 4.3378 0 0.1168"></polygon>
+                                    <polygon id="Fill-5" fill="#BC1F37" points="6.9894 7.9014 0.0004 11.9294 0.0004 12.0004 1.2644 12.0004 8.3734 7.9014"></polygon>
+                                    <polygon id="Fill-6" fill="#2C2F76" points="11.6289 0.0003 11.6289 4.0343 18.6309 0.0003"></polygon>
+                                    <polygon id="Fill-7" fill="#2C2F76" points="1.5624 0.0003 8.5374 4.0343 8.5374 0.0003"></polygon>
+                                    <polygon id="Fill-8" fill="#2C2F76" points="15.2496 4.3383 19.9996 4.3383 19.9996 1.5853"></polygon>
+                                    <polygon id="Fill-9" fill="#2C2F76" points="15.2496 7.9014 19.9996 10.6254 19.9996 7.9014"></polygon>
+                                    <polygon id="Fill-10" fill="#2C2F76" points="1.96 12 8.537 12 8.537 8.207"></polygon>
+                                    <polygon id="Fill-11" fill="#2C2F76" points="11.6289 12 18.2269 12 11.6289 8.207"></polygon>
+                                    <polygon id="Fill-12" fill="#2C2F76" points="0 7.9014 0 10.7484 4.916 7.9014"></polygon>
+                                    <polygon id="Fill-13" fill="#2C2F76" points="0 4.3383 4.916 4.3383 0 1.4883"></polygon>
+                                    <polygon id="Fill-14" fill="#BC1F37" points="9.1557 0.0003 9.1557 5.0523 -0.0003 5.0523 -0.0003 7.1913 9.1557 7.1913 9.1557 12.0003 11.0107 12.0003 11.0107 7.1913 19.9997 7.1913 19.9997 5.0523 11.0107 5.0523 11.0107 0.0003"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

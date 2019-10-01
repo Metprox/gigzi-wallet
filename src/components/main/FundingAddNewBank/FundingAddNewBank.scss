@@ -1,0 +1,69 @@
+.FundingAddNewBank {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 36px 20px 40px;
+}
+
+.amount {
+  // width: 100%;
+  max-width: 50%;
+  margin-bottom: 240px;
+}
+
+.payment {
+  max-width: 50%;
+}
+
+.btn {
+  align-self: flex-end;
+  width: 220px;
+}
+
+.childFlex {
+  width: 100%;
+}
+
+@media (max-width: 1304px) {
+  .payment {
+    max-width: 451px;
+  }
+}
+
+@media (max-width: 767px) {
+  .FundingAddNewBank {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .payment {
+    max-width: 410px;
+  }
+
+  .amount {
+    max-width: 410px;
+
+  }
+}
+
+@media (max-width: 565px) {
+  .FundingAddNewBank {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .payment {
+    max-width: 100%;
+  }
+
+  .amount {
+    max-width: 100%;
+    margin-bottom: 114px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

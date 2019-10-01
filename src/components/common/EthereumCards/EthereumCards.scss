@@ -1,0 +1,17 @@
+.EthereumCards {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media (max-width: 767px) {
+  .EthereumCards {
+    padding-left: 17px;
+  }
+}

@@ -1,0 +1,23 @@
+.Converter {}
+
+.Flex {
+  margin-bottom: 42px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .Flex {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .Converter {
+    h1 {
+      padding: 0 17px;
+    }
+  }
+}

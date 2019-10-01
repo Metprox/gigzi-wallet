@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>SPA</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1280" height="843"></rect>
+        <filter x="-2.5%" y="-1.9%" width="105.0%" height="107.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="500" height="341"></rect>
+        <filter x="-6.4%" y="-4.7%" width="112.8%" height="118.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10.2.-settings_laguages" transform="translate(-930.000000, -391.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="860"></rect>
+            <g id="Wallet-GIGZI" transform="translate(80.000000, 60.000000)">
+                <g id="Rectangle-19">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#F6F7F8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="QR" transform="translate(860.000000, 193.000000)" fill="#FFFFFF">
+                    <polygon id="Rectangle-30-Copy" points="0 0 380 0 380 567 0 567"></polygon>
+                </g>
+            </g>
+            <g id="PopUp">
+                <rect id="Rectangle-" fill="#000000" opacity="0.560000002" x="0" y="0" width="1440" height="860"></rect>
+                <g id="PopUp-Block" transform="translate(470.000000, 260.000000)">
+                    <g id="Rectangle-">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="1-line" transform="translate(20.000000, 129.000000)">
+                        <g id="SPA" transform="translate(402.000000, 0.000000)">
+                            <g id="SPA-Flag" transform="translate(38.000000, 2.000000)">
+                                <rect id="Rectangle" fill="#C60B1E" x="0" y="0" width="20" height="12"></rect>
+                                <rect id="Rectangle" fill="#FFC400" x="0" y="3" width="20" height="6"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

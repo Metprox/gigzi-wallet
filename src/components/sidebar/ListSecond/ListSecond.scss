@@ -1,0 +1,109 @@
+.List {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 13px;
+}
+
+.Item {
+  position: relative;
+
+  .Link {
+    &:hover {
+      border-color: var(--spaceBlue);
+      background: #233039;
+      color: var(--spaceBlue);
+
+      .Svg {
+        svg {
+          stroke: var(--spaceBlue);
+
+          ellipse {
+            fill: var(--spaceBlue);
+          }
+        }
+
+        .SvgOptions {
+          fill: var(--spaceBlue);
+        }
+      }
+    }
+  }
+}
+
+.ItemDisabled {
+  position: relative;
+  opacity: .25;
+  .Link {
+    cursor: default;
+  }
+}
+
+
+.Link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 9.5px 25px 9.5px 18px;
+  margin: 5px 0;
+  border-left: solid 2px transparent;
+  opacity: 1;
+  color: var(--white);
+  font-size: var(--fz13);
+  line-height: var(--lh19);
+  transition: border-color .2s linear, background .2s linear, color .2s linear;
+}
+
+.Svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+
+  svg {
+    transition: fill .2s linear;
+    fill: transparent;
+    stroke: #fff;
+    opacity: 1;
+
+    ellipse {
+      fill: #fff;
+    }
+  }
+
+  .SvgOptions {
+    fill: #fff;
+  }
+}
+
+
+.ActiveLink {
+  position: relative;
+
+  .Link {
+      border-color: var(--spaceBlue);
+      background: #233039;
+      color: var(--spaceBlue);
+
+      .Svg {
+        svg {
+          stroke: var(--spaceBlue);
+
+          ellipse {
+            fill: var(--spaceBlue);
+          }
+        }
+
+        .SvgOptions {
+          fill: var(--spaceBlue);
+        }
+      }
+  }
+}
+
+@media (max-width: 767px) {
+  .List {
+    margin-bottom: 80px;
+  }
+}

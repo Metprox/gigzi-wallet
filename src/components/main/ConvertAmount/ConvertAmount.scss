@@ -1,0 +1,103 @@
+.ConvertAmount {
+  padding: 30px 0;
+  width: 100%;
+  max-width: 380px;
+  background-color: #ffffff;
+  color: var(--black65);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  text-align: center;
+}
+
+.Title {
+  margin-bottom: 67px;
+  font-weight: 500;
+}
+
+.Equal {
+  p {
+    font-weight: 500;
+
+    &:first-of-type {
+      margin-bottom: 13px;
+      text-transform: uppercase;
+    }
+    &:last-of-type {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 42px;
+      color: var(--black);
+      font-size: var(--fz42);
+      line-height: var(--lh37);
+      letter-spacing: 2px;
+
+      span {
+        position: absolute;
+        top: 50%;
+        right: -45px;
+        color: var(--black65);
+        font-size: var(--fz13);
+        font-weight: 500;
+        line-height: var(--lh16);
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.btn {
+}
+
+.DescriptionBtn {
+  margin-bottom: 17px;
+  color: var(--black);
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+@media (max-width: 1304px) {
+  .ConvertAmount {
+    max-width: 391px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ConvertAmount {
+    max-width: 100%;
+  }
+
+  .Title {
+    margin-bottom: 40px;
+  }
+
+  .Equal {
+    p {
+      &:last-of-type {
+        font-size: var(--fz48);
+        line-height: var(--lh68);
+
+        span {
+          right: -50px;
+          font-size: var(--fz15);
+          line-height: var(--lh19);
+        }
+      }
+    }
+  }
+
+  .btn {
+    margin: 0 auto;
+    max-width: 428px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Equal {
+    p {
+      &:last-of-type {
+        margin-left: -15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.FundingAddAccount {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  border-bottom: 2px solid var(--smokyWhite);
+  h6 {
+    padding: 20px 0 21px;
+    text-transform: uppercase;
+  }
+}
+.Body {
+  background: #fff;
+}
+
+.Btn {
+  width: 262px;
+  margin-bottom: 47px;
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .backstep {
+    padding-left: 17px;
+  }
+}
+
+@media (max-width: 565px) {
+  .Btn {
+    width: 100%;
+  }
+}

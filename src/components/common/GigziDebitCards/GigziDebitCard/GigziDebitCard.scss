@@ -1,0 +1,305 @@
+.GigziDebitCard {
+  min-width: 220px;
+  padding: 15px 21px;
+  width: 220px;
+  height: 105px;
+  margin-right: 20px;
+  background: #ffffff;
+  transition: background 0.2s linear, box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05),
+      4px 4px 9px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+
+  // &:focus {
+  //   background: #202a31;
+  //   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05),
+  //     4px 4px 9px 0 rgba(0, 0, 0, 0.12);
+
+  //   .Name {
+  //     color: #fff;
+  //   }
+  //   .Stone {
+  //     color: #ffffff;
+  //   }
+  //   .Usd {
+  //     opacity: 0.35;
+  //     color: #ffffff;
+  //   }
+  //   .gzb,
+  //   .gzs,
+  //   .gzp {
+  //     path {
+  //       &:nth-child(2) {
+  //         fill: #fff;
+  //       }
+  //       &:last-child {
+  //         fill: #000;
+  //       }
+  //     }
+  //   }
+  //   .gzg {
+  //     path {
+  //       &:nth-child(3) {
+  //         fill: #fff;
+  //       }
+  //       &:last-child {
+  //         fill: #000;
+  //       }
+  //     }
+  //   }
+  //   .euro {
+  //     fill: #fff;
+  //     opacity: 1;
+  //   }
+  //   .eth {
+  //     rect {
+  //       fill: #fff;
+  //     }
+  //     fill: #000;
+  //   }
+  //   .visa {
+  //     fill: #fff;
+  //   }
+  //   .mc {
+  //     circle {
+  //       &:first-of-type {
+  //         fill: #fff;
+  //       }
+  //       &:last-of-type {
+  //         fill: #fff;
+  //       }
+  //     }
+  //   }
+  //   .Code {
+  //     color: rgba(255, 255, 255, 0.85);
+  //   }
+  //   .Dates {
+  //     color: rgba(255, 255, 255, 0.5);
+  //   }
+  // }
+}
+
+.Flex {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.Flex2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Code {
+  color: var(--black85);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+.Dates {
+  color: var(--black35);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+
+.Icon {
+  width: 30%;
+  svg {
+    height: 26px;
+    max-width: 100%;
+  }
+}
+
+.Money {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 70%;
+  p {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: right;
+  }
+}
+
+.Stone {
+  margin-bottom: 3px;
+  color: var(--black);
+  font-size: var(--fz15);
+  line-height: var(--lh19);
+}
+.Usd {
+  color: #949699;
+  font-size: var(--fz10);
+  line-height: var(--lh13);
+}
+
+.Name {
+  opacity: 0.6;
+  color: var(--black);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+  text-transform: uppercase;
+  transition: color, 0.2s linear;
+}
+
+.gzb {
+  path {
+    &:nth-child(2) {
+      fill: #1c242f;
+    }
+    &:last-child {
+      fill: #fff;
+    }
+  }
+}
+.gzg {
+  path {
+    &:nth-child(3) {
+      fill: #ffb400;
+    }
+    &:last-child {
+      fill: #000;
+    }
+  }
+}
+.gzs {
+  path {
+    &:nth-child(2) {
+      fill: #c0c0c0;
+    }
+    &:last-child {
+      fill: #000;
+    }
+  }
+}
+.gzp {
+  path {
+    &:nth-child(2) {
+      fill: #ffcb7a;
+    }
+    &:last-child {
+      fill: #000;
+    }
+  }
+}
+
+.eth {
+  rect {
+    fill: #77d3be;
+  }
+  fill: #fff;
+}
+
+.dollar {
+  height: 23px;
+  width: 12px;
+}
+
+.euro,
+.dollar {
+  fill: var(--sapphire);
+  opacity: 0.2;
+}
+
+.visa {
+  fill: #192071;
+  width: 44px;
+  height: 14px;
+}
+
+.mc {
+  circle {
+    &:first-of-type {
+      fill: #eb001b;
+    }
+    &:last-of-type {
+      fill: #f5a623;
+    }
+  }
+}
+
+.ActiveCard {
+  background: #202a31;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05), 4px 4px 9px 0 rgba(0, 0, 0, 0.12);
+
+  .Name {
+    color: #fff;
+  }
+  .Stone {
+    color: #ffffff;
+  }
+  .Usd {
+    opacity: 0.35;
+    color: #ffffff;
+  }
+  .gzb,
+  .gzs,
+  .gzp {
+    path {
+      &:nth-child(2) {
+        fill: #fff;
+      }
+      &:last-child {
+        fill: #000;
+      }
+    }
+  }
+  .gzg {
+    path {
+      &:nth-child(3) {
+        fill: #fff;
+      }
+      &:last-child {
+        fill: #000;
+      }
+    }
+  }
+  .euro,
+  .dollar {
+    fill: #fff;
+    opacity: 1;
+  }
+  .eth {
+    rect {
+      fill: #fff;
+    }
+    fill: #000;
+  }
+  .Code {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .Dates {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .visa {
+    fill: #fff;
+  }
+  .mc {
+    circle {
+      &:first-of-type {
+        fill: #fff;
+      }
+      &:last-of-type {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .GigziDebitCard {
+    min-width: 224px;
+    width: 224px;
+    margin-right: 16px;
+  }
+}

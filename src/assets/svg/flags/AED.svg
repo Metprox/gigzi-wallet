@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1280" height="843"></rect>
+        <filter x="-2.5%" y="-1.9%" width="105.0%" height="107.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="500" height="566"></rect>
+        <filter x="-6.4%" y="-2.8%" width="112.8%" height="111.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08.2.-local_currency_Currencies" transform="translate(-813.000000, -569.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="860"></rect>
+            <g id="Wallet-GIGZI" transform="translate(80.000000, 60.000000)">
+                <g id="Rectangle-19">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#F6F7F8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="TRANSACTIONS" transform="translate(300.000000, 193.000000)">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="540" height="567"></rect>
+                    <g id="Sent-Gigzi-Black" transform="translate(0.000000, 314.000000)" fill="#212121" font-family="Montserrat-Medium, Montserrat" font-size="15" font-weight="400">
+                        <text id="-476.65-GZB">
+                            <tspan x="427.9" y="16">-476.65 GZB</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="PopUp">
+                <rect id="Rectangle-" fill="#000000" opacity="0.560000002" x="0" y="0" width="1440" height="860"></rect>
+                <g id="PopUp-Block" transform="translate(470.000000, 147.000000)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="All-Currencies" transform="translate(0.000000, 371.000000)">
+                        <g id="4th-Line" transform="translate(20.000000, 49.000000)">
+                            <g id="Group-5" transform="translate(323.000000, 2.000000)">
+                                <polygon id="Fill-1" fill="#BC1F33" points="0 12 5.832 12 5.832 0 0 0"></polygon>
+                                <polygon id="Fill-2" fill="#419B45" points="5.832 4 20 4 20 0 5.832 0"></polygon>
+                                <polygon id="Fill-3" fill="#FEFEFE" points="5.832 8 20 8 20 3.999 5.832 3.999"></polygon>
+                                <polygon id="Fill-4" fill="#020303" points="5.832 12 20 12 20 8 5.832 8"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

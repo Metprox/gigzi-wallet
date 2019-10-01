@@ -1,0 +1,54 @@
+.HeaderContacts {
+  padding: 30px 0 22px;
+  background: #fff;
+}
+
+.Search {
+  flex: 1;
+  display: inline-block;
+  margin-right: 20px;
+  height: 42px;
+  background-color: #fbfbfb;
+  vertical-align: top;
+}
+
+.btnWrap {
+  width: 160px;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1304px) {
+  .btnWrap {
+    width: 180px;
+  }
+  .HeaderContacts {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .btnWrap {
+    width: 160px;
+  }
+}
+
+@media (max-width: 565px) {
+  .flex {
+    flex-flow: column wrap;
+  }
+
+  .Search {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  .btnWrap {
+    width: 100%;
+  }
+}

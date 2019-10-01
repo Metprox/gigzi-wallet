@@ -1,0 +1,21 @@
+.SectionDebitOrder {
+}
+
+.Title {
+  padding: 20px 0 21px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #f6f6f6;
+  h6 {
+    text-transform: uppercase;
+  }
+}
+
+.wrapPagination {
+
+}
+
+@media (max-width: 767px) {
+  .backstep {
+    padding: 0 17px;
+  }
+}

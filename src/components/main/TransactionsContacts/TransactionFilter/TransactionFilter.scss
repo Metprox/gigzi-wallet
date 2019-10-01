@@ -1,0 +1,66 @@
+.TransactionFilter {
+  position: absolute;
+  top: 63px;
+  right: -20px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.08);
+  width: 540px;
+  z-index: 100;
+
+  p {
+    margin-bottom: 12px;
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cancel,
+.done {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: var(--fz13);
+  font-weight: 500;
+  letter-spacing: 0.43px;
+  line-height: var(--lh16);
+  text-align: right;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cancel {
+  margin-right: 20px;
+  color: #656a6d;
+}
+.done {
+  color: var(--spaceBlue);
+}
+
+@media (max-width: 1000px) {
+  .TransactionFilter {
+    padding-left: 17px;
+    padding-right: 17px;
+    left: inherit;
+    right: -20px;
+    max-width: 552px;
+  }
+}

@@ -1,0 +1,59 @@
+.PopupOrderSuccess {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 40px 0 36px;
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24);
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  p {
+    margin-bottom: 61px;
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+.Btn {
+  margin: 0 auto;
+  max-width: 340px;
+  width: 100%;
+}
+
+@media (max-width: 1304px) {
+  .PopupOrderSuccess {
+    z-index: 4000;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .PopupOrderSuccess {
+    max-width: 375px;
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .PopupOrderSuccess {
+    top: inherit;
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+    transform: translate(-50%, 0);
+  }
+}

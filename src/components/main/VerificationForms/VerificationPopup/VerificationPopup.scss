@@ -1,0 +1,75 @@
+.VerificationPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 40px 20px 40px;
+  max-width: 450px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24);
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+  h2 {
+    padding: 0;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: var(--fz24);
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: var(--lh29);
+  }
+  p {
+    width: 90%;
+    margin: 0 auto 34px;
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+.Btn {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1304px) {
+  .VerificationPopup {
+    z-index: 4000;
+  }
+}
+
+@media (max-width: 767px) {
+  .VerificationPopup {
+    max-width: 375px;
+    padding: 40px 17px 40px 17px;
+
+    p {
+      margin-bottom: 45px;
+    }
+  }
+
+  .Btn {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 565px) {
+  .VerificationPopup {
+    max-width: 100%;
+    padding: 40px 17px 40px 17px;
+    top: inherit;
+    left: 50%;
+    bottom: -60px;
+    transform: translate(-50%, 0);
+
+    p {
+      margin-bottom: 45px;
+    }
+  }
+
+  .Btn {
+    max-width: 100%;
+  }
+}

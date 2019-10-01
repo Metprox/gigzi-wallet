@@ -1,0 +1,13 @@
+.Contacts {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .Contacts {
+    h1 {
+      padding-left: 17px;
+    }
+  }
+}

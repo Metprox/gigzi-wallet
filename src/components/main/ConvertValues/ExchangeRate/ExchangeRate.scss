@@ -1,0 +1,46 @@
+.ExchangeRate {
+  padding-bottom: 30px;
+}
+
+.Description {
+  margin-bottom: 10px;
+  color: var(--black65);
+  font-size: var(--fz13);
+  font-weight: 500;
+  line-height: var(--lh16);
+}
+
+.Input {
+  padding: 0 15px;
+  height: 50px;
+  background-color: var(--lightBlueGray45);
+  p {
+    color: var(--black65);
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+  span {
+    color: #121a1f;
+    font-size: var(--fz13);
+    font-weight: 500;
+    line-height: var(--lh16);
+  }
+}
+
+@media (max-width: 1000px) {
+  .ExchangeRate {
+    border-bottom: solid 1px var(--smokyWhite);
+  }
+}
+
+@media (max-width: 767px) {
+  .Input {
+    p {
+      font-size: 11px;
+      span {
+        font-size: 11px;
+      }
+    }
+  }
+}

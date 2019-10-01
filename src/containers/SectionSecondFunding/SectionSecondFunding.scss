@@ -1,0 +1,63 @@
+.Funding {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  flex: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linkManage {
+  color: #404040;
+  font-size: var(--fz15);
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.Body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+@media (max-width: 767px) {
+  .Header {
+    padding: 0 17px;
+    flex-flow: column wrap;
+    align-items: flex-start;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .linkManage {
+    margin-bottom: 18px;
+  }
+}
+
+.addOrderConfirmBtn {
+  margin-top: 85px;
+  align-self: flex-end;
+}
+
+@media (max-width: 767px) {
+  .addOrderConfirmBtn {
+    margin-right: 17px;
+  }
+}
+
+@media (max-width: 565px) {
+  .addOrderConfirmBtn {
+    margin-right: 17px;
+    align-self: center;
+    width: 100%;
+  }
+}

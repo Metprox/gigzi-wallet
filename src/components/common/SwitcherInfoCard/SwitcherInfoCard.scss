@@ -1,0 +1,33 @@
+.SwitcherInfoCard {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 220px;
+  min-width: 220px;
+  padding: 15px 21px;
+  width: 220px;
+  height: 105px;
+  margin-right: 20px;
+  background: #ffffff;
+  // box-shadow: 0 0 8px 0 #e0eaf0;
+  cursor: default;
+  transition: background 0.2s linear, box-shadow 0.2s linear;
+  p {
+      color: #202A31;
+      font-size: var(--fz13);
+      line-height: var(--lh16);
+      text-align: center;
+      text-transform: uppercase;
+  }
+
+  svg {
+    margin-bottom: 11px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .SwitcherInfoCard {
+    margin-right: 0;
+  }
+}

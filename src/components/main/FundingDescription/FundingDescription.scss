@@ -1,0 +1,13 @@
+.FundingDescription {
+  flex: 0;
+  border-bottom: 1px solid var(--smokyWhite);
+  padding: 10px 0 10px;
+  background: rgba(247, 249, 251, 0.6);
+  p {
+    color: var(--black);
+    font-size: var(--fz10);
+    font-weight: 500;
+    line-height: var(--lh13);
+    text-transform: uppercase;
+  }
+}
